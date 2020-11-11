@@ -1,3 +1,147 @@
-.mas_informacion_platillo{
-    
+.mas_informacion_platillo {
+	background: $color_blanco;
+	box-shadow: -1px -1px 18px -5px rgba(0, 0, 0, 0.36);
+	display: flex;
+	flex-direction: row;
+	position: relative;
+    width: 90%;
+    height: 90%;
+	.foto_comida {
+		width: 50%;
+		border-radius: 15px;
+		img {
+			border-radius: 15px;
+			width: 100%;
+			height: 100%;
+			box-shadow: 2px 0px 18px -5px rgba(0, 0, 0, 0.7);
+		}
+	}
+	.informacion {
+        width: 50%;
+        height: 100%;
+		.cerrar {
+			border: 2px solid $color_rojo;
+			background: $color_blanco;
+			border-radius: 5px;
+			color: $color_cafe;
+			cursor: pointer;
+			font-weight: 600;
+			font-size: 20px;
+			height: 32px;
+			opacity: .8;
+			position: absolute;
+			right: 0%;
+			width: 32px;
+			transition: ease-in-out all 0.2s;
+			&:hover {
+				opacity: 1;
+				transition: ease-in-out all 0.2s;
+				color: $color_blanco;
+				background: $color_rojo;
+				font-weight: 700;
+			}
+		}
+		.titulo {
+			width: 100%;
+			color: $color_negro;
+			font-size: 20px;
+			text-align: center;
+            font-weight: 500;
+		}
+		.nombre_platillo {
+			color: $color_cafe;
+			font-size: 32px;
+			font-weight: 700;
+		}
+
+		.precio_botonOrden {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 8%;
+			width: 100%;
+			.precio {
+				color: $color_azul;
+				font-weight: 700;
+				width: 30%;
+				font-size: 20px;
+				letter-spacing: 0.8px;
+			}
+			.realizar-orden {
+				background: $color_blanco;
+				border-radius: 6px;
+				border: 2px solid $color_verde;
+                color: $color_verde;
+                font-size: 18px;
+				cursor: pointer;
+				font-weight: 500;
+				height: 100%;
+				letter-spacing: 0.5px;
+				width: 40%;
+				transition: ease-in-out all 0.3s;
+				&:hover {
+					transition: ease-in-out all 0.3s;
+					color: #ffffff;
+					background: $color_verde;
+				}
+			}
+		}
+
+		.ingredientes {
+			height: 30%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			overflow: auto;
+			.titulo {
+				height: 15%;
+			}
+			.lista_ingredientes {
+				height: 85%;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: center;
+				.ingrediente_contenido {
+					width: 50%;
+					height: 20%;
+					text-align: center;
+				}
+			}
+		}
+
+		.ingredientes_extra {
+			height: 30%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			overflow: auto;
+			form {
+				height: 85%;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: center;
+				.label_input {
+					text-align: center;
+					height: 30%;
+					width: 50%;
+				}
+			}
+		}
+
+		.descripcion_comida {
+			height: 22%;
+			overflow: auto;
+			padding: 0 10px;
+			text-align: justify;
+
+			.texto_resaltado {
+				color: $color_verde;
+				font-weight: 500;
+			}
+		}
+	}
 }

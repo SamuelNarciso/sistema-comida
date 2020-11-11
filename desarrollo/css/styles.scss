@@ -4,21 +4,31 @@ $color_rojo: #f8333c;
 $color_amarillo: #fcab10;
 $color_blanco: #f1f1f1;
 $color_negro: #212121;
+$color_azul: #4285F4;
 
 @import 'mas_informacion_platillo';
 * {
+	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 
 	word-wrap: break-word;
-	box-sizing: border-box;
 }
 body {
 	width: 100%;
 	margin: 0 auto;
 	height: 100vh;
 	.content {
+		background: $color_blanco;
 		height: 100%;
+		width: 100%;
+		main {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
