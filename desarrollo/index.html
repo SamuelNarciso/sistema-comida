@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Zandunguera</title>
+	</head>
+	<body>
+		<div class="content">
+			<header></header>
+			<main>
+				<div data-id="" class="mas_informacion_platillo">
+					<div class="foto_comida">
+						<img src="Assets/img/comida-pasta.jpg" alt="comida_pasta" />
+					</div>
+					<div class="informacion">
+						<input type="button" class="cerrar" value="X" />
+						<h1 class="titulo nombre_platillo">Titulo del platillo</h1>
+
+						<div class="precio_botonOrden">
+							<p class="precio"></p>
+							<input
+								type="button"
+								class="boton realizar-orden"
+								value="Realizar orden "
+							/>
+						</div>
+
+						<div class="ingredientes">
+							<p class="titulo">Ingredientes</p>
+							<p class="texto_contenido">ingrediente 1</p>
+							<p class="texto_contenido">ingrediente 2</p>
+							<p class="texto_contenido">ingrediente 3</p>
+							<p class="texto_contenido">ingrediente 4</p>
+							<p class="texto_contenido">ingrediente 5</p>
+							<p class="texto_contenido">ingrediente 6</p>
+						</div>
+
+						<div class="ingredientes_extra">
+							<p class="titulo">Ingredientes extra, agregables</p>
+							<form>
+								<label for="ingrediente_nombre_1">ingrediente extra 1</label>
+								<input
+									type="radio"
+									name="ingrediente_extra"
+									class="ingrediente_extra"
+									id="ingrediente_nombre_1"
+								/>
+
+								<label for="ingrediente_nombre_2">ingrediente extra 2</label>
+								<input
+									type="radio"
+									name="ingrediente_extra"
+									class="ingrediente_extra"
+									id="ingrediente_nombre_1"
+								/>
+
+								<label for="ingrediente_nombre_3">ingrediente extra 3</label>
+								<input
+									type="radio"
+									name="ingrediente_extra"
+									class="ingrediente_extra"
+									id="ingrediente_nombre_3"
+								/>
+								<label for="ingrediente_nombre_4">ingrediente extra 4</label>
+								<input
+									type="radio"
+									name="ingrediente_extra"
+									class="ingrediente_extra"
+									id="ingrediente_nombre_4"
+								/>
+							</form>
+						</div>
+
+						<div class="descripcion_comida">
+							<p class="titulo">Descripcion de la comida</p>
+							<p class="texto_contenido">
+								Lorem
+								<span class="texto_resaltado">ipsum dolor sit amet</span>
+								consectetur adipisicing elit.
+								<span class="texto_resaltado"
+									>Dolorem eligendi necessitatibus</span
+								>
+								facere ex culpa similique
+								<span class="texto_resaltado"
+									>accusantium qui consequatur eos</span
+								>
+								animi beatae odit mollitia praesentium velit aliquam,
+								<span class="texto_resaltado"> nemo cum cupiditate </span> hic!
+							</p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer></footer>
+		</div>
+	</body>
 </html>

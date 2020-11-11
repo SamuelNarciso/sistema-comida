@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAQA,AAAA,CAAC,CAAC;EACD,WAAW,EAAE,qBAAqB;EAClC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EAEV,SAAS,EAAE,UAAU;EACrB,UAAU,EAAE,UAAU;CACtB;;AACD,AAAA,IAAI,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,KAAK;CAIb;;AAPD,AAIC,IAJG,CAIH,QAAQ,CAAC;EACR,MAAM,EAAE,IAAI;CACZ",
+    "sources": [
+        "styles.scss",
+        "_mas_informacion_platillo.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

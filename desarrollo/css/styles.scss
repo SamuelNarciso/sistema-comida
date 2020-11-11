@@ -1,0 +1,24 @@
+$color_cafe: #352f2f;
+$color_verde: #44af69;
+$color_rojo: #f8333c;
+$color_amarillo: #fcab10;
+$color_blanco: #f1f1f1;
+$color_negro: #212121;
+
+@import 'mas_informacion_platillo';
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	margin: 0 auto;
+	height: 100vh;
+	.content {
+		height: 100%;
+	}
+}
