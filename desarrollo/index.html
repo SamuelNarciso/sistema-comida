@@ -19,129 +19,51 @@
 		<div class="content">
 			<header></header>
 			<main>
-				<div data-id="info_platillo_xxxxx" class="mas_informacion_platillo">
-					<div class="foto_comida">
-						<img src="Assets/img/comida-pasta.jpg" alt="comida_pasta" />
-					</div>
-					<div class="informacion">
-						<input type="button" class="cerrar" value="X" />
-						<h1 class="titulo nombre_platillo">Titulo del platillo</h1>
+				<section class="header">
+					<h1>Menu</h1>
+				</section>
 
-						<div class="precio_botonOrden">
-							<p class="precio">$132654</p>
-							<input
-								data-id="info_platillo_xxxxx"
-								type="button"
-								class="boton realizar-orden"
-								value="Realizar orden "
-							/>
-						</div>
+				<section class="main">
+					<article class="categoria platillos">
 
-						<div class="ingredientes">
-							<p class="titulo">Ingredientes</p>
-							<div class="lista_ingredientes">
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 1</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 2</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 3</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 4</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 5</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 6</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 7</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 8</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 9</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 10</p>
-								</div>
-								<div class="ingrediente_contenido">
-									<p class="texto_contenido">ingrediente 11</p>
-								</div>
+						<div
+							data-inicio="Aqui comienza la plantilla del div"
+							data-id="platillo_vista_previa_XXXXXXXXX"
+							class="platillo_vista_previa"
+						>
+							<div class="header_platillo">
+								<p class="titulo_platillo">XXXXXTitulo del platilloXXXXXXX</p>
+							</div>
+							<div class="main_platillo">
+								<img
+									src="Assets/img/comida-quesadillas.JPG"
+									alt="XXXXXXXXXXXX"
+								/>
+							</div>
+							<div class="informacion">
+								<p class="precio">$132XXX</p>
+								<input
+									data-id="platillo_vista_previa_XXXXXXXXX"
+									type="button"
+									class="boton_platillo boton_secundario"
+									value="Ver ingredientes"
+								/>
+								<input
+									data-id="platillo_vista_previa_XXXXXXXXX"
+									type="button"
+									class="boton_platillo boton_primario"
+									value="Añadir a la orden"
+								/>
 							</div>
 						</div>
-
-						<div class="ingredientes_extra">
-							<p class="titulo">Ingredientes extra, agregables</p>
-							<form>
-								<div class="label_input">
-									<label for="ingrediente_nombre_1">ingrediente extra 1</label>
-									<input
-										type="checkbox"
-										name="ingrediente_extra"
-										class="ingrediente_extra"
-										id="ingrediente_nombre_1"
-									/>
-								</div>
-
-								<div class="label_input">
-									<label for="ingrediente_nombre_2">ingrediente extra 2</label>
-									<input
-										type="checkbox"
-										name="ingrediente_extra"
-										class="ingrediente_extra"
-										id="ingrediente_nombre_2"
-									/>
-								</div>
-
-								<div class="label_input">
-									<label for="ingrediente_nombre_3">ingrediente extra 3</label>
-									<input
-										type="checkbox"
-										name="ingrediente_extra"
-										class="ingrediente_extra"
-										id="ingrediente_nombre_3"
-									/>
-								</div>
-								<div class="label_input">
-									<label for="ingrediente_nombre_4">ingrediente extra 4</label>
-									<input
-										type="checkbox"
-										name="ingrediente_extra"
-										class="ingrediente_extra"
-										id="ingrediente_nombre_4"
-									/>
-								</div>
-							</form>
-						</div>
-
-						<div class="descripcion_comida">
-							<p class="titulo">Descripcion de la comida</p>
-							<p class="texto_contenido">
-								Lorem
-								<span class="texto_resaltado">ipsum dolor sit amet</span>
-								consectetur adipisicing elit.
-								<span class="texto_resaltado"
-									>Dolorem eligendi necessitatibus</span
-								>
-								facere ex culpa similique
-								<span class="texto_resaltado"
-									>accusantium qui consequatur eos</span
-								>
-								animi beatae odit mollitia praesentium velit aliquam,
-								<span class="texto_resaltado"> nemo cum cupiditate </span> hic!
-							</p>
-						</div>
-					</div>
-                </div>
-                
+					
+					
+					
+					</article>
+				</section>
 			</main>
 			<footer></footer>
+			<script src="js/comidas_bd.js"></script>
 		</div>
 	</body>
 </html>
