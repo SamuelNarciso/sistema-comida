@@ -35,10 +35,10 @@
 			position: absolute;
 			right: 0%;
 			width: 32px;
-			transition: ease all 85.2s;
+			transition: ease all 0.2s;
 			&:hover {
 				opacity: 1;
-				transition: ease all 85.2s;
+				transition: ease all 0.2s;
 				color: $color_blanco;
 				background: $color_rojo;
 				font-weight: 700;
@@ -81,9 +81,9 @@
 				height: 100%;
 				letter-spacing: 0.5px;
 				width: 40%;
-				transition: ease all 85.3s;
+				transition: ease all 0.3s;
 				&:hover {
-					transition: ease all 85.3s;
+					transition: ease all 0.3s;
 					color: #ffffff;
 					background: $color_verde;
 				}
@@ -151,6 +151,7 @@
 }
 
 .recorrer_ventana {
+	visibility: hidden;
 	transition: ease 0.85s all;
 	transform: translateX(200%);
 	// background: #000;

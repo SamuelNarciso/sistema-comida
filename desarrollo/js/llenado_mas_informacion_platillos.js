@@ -52,15 +52,13 @@ export const llenado_mas_informacion = (id) => {
 					datos_platillo.nombre_platillo
                 }</h1>
                 
-
         <div class="precio_botonOrden">
             <p class="precio">${datos_platillo.precio_platillo}</p>
             <input data-id="${
 							datos_platillo.id_platillo
 						}" type="button" class="boton realizar-orden"
-                value="Realizar orden " />
+                value="Añadir a la orden " />
         </div>
-
         <div class="ingredientes">
             <p class="titulo">Ingredientes</p>
             <div class="lista_ingredientes">

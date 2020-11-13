@@ -1,4 +1,5 @@
 import { llenado_mas_informacion } from './llenado_mas_informacion_platillos.js';
+import { buscar_ingredientes_extra } from './anadir_orden_funcion.js';
 const botones_primarios = document.querySelectorAll('.boton_primario');
 const botones_secundarios = document.querySelectorAll('.boton_secundario');
 // const cerrar_mas_informacion = document.querySelector(
@@ -19,7 +20,7 @@ const ver_ingredientes_platillo = () => {
 
 botones_primarios.forEach((boton) => {
 	boton.addEventListener('click', (e) => {
-		// busqueda_bd(e.target.dataset.id);
+		console.log(e.target.dataset.id);
 	});
 });
 
@@ -33,9 +34,16 @@ botones_secundarios.forEach((boton) => {
 });
 
 mas_informacion_platillo.addEventListener('click', (e) => {
-	console.log(e.target.classList);
-	if (e.target.classList[0] == 'cerrar') {
+	// console.log(e.target.classList);
+	if (e.target.classList.contains('cerrar')) {
 		ver_ingredientes_platillo();
+	}
+
+	if (e.target.classList.contains('realizar-orden')) {
+		// ver_ingredientes_platillo();
+		console.log(e.target.dataset);
+		buscar_ingredientes_extra(mas_informacion_platillo);
+		// console.log(e);
 	}
 });
 // console.log(platillos_bd['info_platillo_doblada_quesillo']);
