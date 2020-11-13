@@ -1,5 +1,5 @@
 export const platillos_bd = {
-	// Yamilet
+	// TODO: Yamilet
 	info_platillo_doblada_cecina: {
 		nombre_platillo: 'Doblada cecina',
 		id_platillo: 'info_platillo_doblada_cecina',
@@ -173,10 +173,9 @@ export const platillos_bd = {
 		descripcion_platillo: 'El agua más refrescante y rica.',
 	},
 
-	// Fabian:
-
-	info_platillo_molotes_servidos: {
-		nombre_platillo: 'platillo_Molotes_servidos',
+	//TODO: Fabian:
+	info_platillo_molotes_servidos : {
+		nombre_platillo: 'Molotes',
 		id_platillo: 'info_platillo_molotes_servidos',
 		ruta_imagen_platillo: 'Assets/img/Molotes.JPG',
 		alt_imagen: 'Molotes_servidos',
@@ -186,9 +185,9 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Este platillo consta de 3 deliciosos molotes de bistec con papa, con la pisibilidad de agregar un ingrediente extra',
 	},
-
-	info_platillo_mole_pollo_servido: {
-		nombre_platillo: 'platillo_Mole_Pollo_Servido',
+	
+	info_platillo_mole_pollo_servidos : {
+		nombre_platillo: 'Mole con Pollo',
 		id_platillo: 'info_platillo_mole_pollo_servido',
 		ruta_imagen_platillo: 'Assets/img/MolePollo.JPG',
 		alt_imagen: 'Mole_Pollo_Servido',
@@ -198,63 +197,57 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Este delicioso platillo consta de una pieza de pollo bañada en mole junto con un decilioso arroz, con la posibilidad de agregar frijoles al delicioso platillo',
 	},
-
-	info_platillo_enchilada_mole_servido: {
-		nombre_platillo: 'platillo_Enchilada_mole_servido',
+	
+	info_platillo_enchilada_mole_servido : {
+		nombre_platillo: 'Enchiladas de Mole',
 		id_platillo: 'info_platillo_enchilada_mole_servido',
 		ruta_imagen_platillo: 'Assets/img/EnchiladaMole.JPG',
 		alt_imagen: 'Enchilada_mole_servido',
 		precio_platillo: '$45',
-		ingredientes_principales: [
-			'Lechuga',
-			'Queso',
-			'Crema',
-			'Cebolla',
-			'Jitomate',
-		],
+		ingredientes_principales: ['Lechuga', 'Queso', 'Crema', 'Cebolla', 'Jitomate'],
 		ingredientes_extra: ['Aguacate'],
 		descripcion_platillo:
 			'Nuestras exquisitas enchiladas de mole son muy pedidaas por los clientes, ya que es una orden de 3 y cuenta con la posibilidad de algun ingrediente extra ',
 	},
-
-	info_platillo_picada_pollo: {
-		nombre_platillo: 'platillo_Picada_Pollo',
+	
+	info_platillo_picada_pollo : {
+		nombre_platillo: 'Picada de pollo',
 		id_platillo: 'info_platillo_picada_pollo',
 		ruta_imagen_platillo: 'Assets/img/picapollo.jpg',
 		alt_imagen: 'Picada_Pollo',
 		precio_platillo: '$15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga', 'Quesillo'],
+		ingredientes_extra: ['Lechuga','Quesillo'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de pollo pueden ser acompañadas por lechuga o quisillo si asi lo desea el cliente para mayor agrado',
 	},
-
-	info_platillo_picada_chicha_servida: {
-		nombre_platillo: 'platillo_Picada_Chicha_servida',
+	
+	info_platillo_picada_chicha_servida : {
+		nombre_platillo: 'Picada de chicharrón prensado',
 		id_platillo: 'info_platillo_picada_chicha_servida',
 		ruta_imagen_platillo: 'Assets/img/PicaChicha.JPG',
 		alt_imagen: 'Picada_Chicha_servida',
 		precio_platillo: '$15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga', 'Quesillo'],
+		ingredientes_extra: ['Lechuga','Quesillo'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de chicharron prensado pueden ser acompañadas por lechuga o quisillo si asi lo desea el cliente para mayor agrado',
 	},
-
-	info_platillo_picada_cecina_servida: {
-		nombre_platillo: 'platillo_Picada_Cecina_servida',
+	
+	info_platillo_picada_cecina_servida : {
+		nombre_platillo: 'Picada de cecina',
 		id_platillo: 'info_platillo_picada_cecina_servida',
 		ruta_imagen_platillo: 'Assets/img/PicaCeci.jpg',
 		alt_imagen: 'Picada_Cecina_servida',
 		precio_platillo: '$15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga', 'Aguacate'],
+		ingredientes_extra: ['Lechuga','Aguacate'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de cecina pueden ser acompañadas por lechuga o aguacate si asi lo desea el cliente para mayor agrado',
 	},
-
-	info_platillo_picada_quesillo_servida: {
-		nombre_platillo: 'platillo_Picada_Quesillo_servida',
+	
+	info_platillo_picada_quesillo_servida : {
+		nombre_platillo: 'Picada de quesillo',
 		id_platillo: 'info_platillo_picada_quesillo_servida',
 		ruta_imagen_platillo: 'Assets/img/PicaQuesillo.jpg',
 		alt_imagen: 'Picada_Quesillo_servida',
@@ -264,45 +257,45 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de quesillo son una excelente opcion y pueden ser acompañadas por lechuga si asi lo desea el cliente para mayor agrado',
 	},
-
-	info_platillo_picada_longaniza: {
-		nombre_platillo: 'platillo_Picada_longaniza',
+	
+	info_platillo_picada_longaniza : {
+		nombre_platillo: 'Picada de Longaniza',
 		id_platillo: 'info_platillo_picada_longaniza',
 		ruta_imagen_platillo: 'Assets/img/PicaLonga.jpg',
 		alt_imagen: 'Picada_longaniza',
 		precio_platillo: '$15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga', 'Aguacate'],
+		ingredientes_extra: ['Lechuga','Aguacate'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de longaniza son una excelente opcion y pueden ser acompañadas por lechuga o aguacate si asi lo desea el cliente para mayor agrado',
 	},
-
-	info_platillo_picadapicadillo_servida: {
-		nombre_platillo: 'platillo_PicadaPicadillo_servida',
+	
+	info_platillo_picadapicadillo_servida : {
+		nombre_platillo: 'Picada de picadillo',
 		id_platillo: 'info_platillo_picadapicadillo_servida',
 		ruta_imagen_platillo: 'Assets/img/PIcaPica.JPG',
 		alt_imagen: 'PicadaPicadillo_servida',
 		precio_platillo: '$15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga', 'Quesillo'],
+		ingredientes_extra: ['Lechuga','Quesillo'],
 		descripcion_platillo:
 			'Las exquisitas picadas de picadillo son una excelente opcion y pueden ser acompañadas por lechuga o quesillo para mayor agrado del cliente',
 	},
-
+	
 	info_platillo_dobladapollo_servida: {
-		nombre_platillo: 'platillo_DobladaPollo_servida',
+		nombre_platillo: 'Doblada de pollo',
 		id_platillo: 'info_platillo_dobladapollo_servida',
 		ruta_imagen_platillo: 'Assets/img/dobladaPollo.jpg',
 		alt_imagen: 'DobladaPollo_servida',
 		precio_platillo: '$15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga', 'Quesillo'],
+		ingredientes_extra: ['Lechuga','Quesillo'],
 		descripcion_platillo:
 			'Las exquisitas dobladas de pollo son una excelente opcion y pueden ser acompañadas por lechuga o quesillo para mayor agrado del cliente',
 	},
-
+	
 	info_platillo_dobladachicha_servida: {
-		nombre_platillo: 'platillo_DobladaChicha_servida',
+		nombre_platillo: 'Doblada de chicharrón prensado',
 		id_platillo: 'info_platillo_dobladachicha_servida',
 		ruta_imagen_platillo: 'Assets/img/dobladaChica.jpg',
 		alt_imagen: 'DobladaChicha_servida',
@@ -312,8 +305,10 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Nuestras exquisitas dobladas de chicharron prensado son una excelente opcion para los clientes y pueden ser acompañadas por lechuga para mayor agrado',
 	},
-
-	// Eve:
+	
+	
+	
+	//TODO: Eve:
 	info_platillo_aguajamaicamedio: {
 		nombre_platillo: 'Agua de Jamaica de 1/2',
 		id_platillo: 'info_platillo_aguajamaicamedio',
@@ -456,7 +451,7 @@ export const platillos_bd = {
 		ingredientes_extra: ['Vaso con Hielo'],
 		descripcion_platillo: 'Bebida',
 	},
-	// Enoc
+	//TODO: Enoc
 	info_platillo_cecina_servida: {
 		nombre_platillo: 'Cecina Servida',
 		id_platillo: 'info_platillo_cecina_servida',
