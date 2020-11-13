@@ -20,7 +20,7 @@ const ver_ingredientes_platillo = () => {
 
 botones_primarios.forEach((boton) => {
 	boton.addEventListener('click', (e) => {
-		console.log(e.target.dataset.id);
+		// console.log(e.target.dataset.id);
 	});
 });
 
@@ -41,8 +41,8 @@ mas_informacion_platillo.addEventListener('click', (e) => {
 
 	if (e.target.classList.contains('realizar-orden')) {
 		// ver_ingredientes_platillo();
-		console.log(e.target.dataset);
-		buscar_ingredientes_extra(mas_informacion_platillo);
+	
+		buscar_ingredientes_extra(e.target.dataset.id,mas_informacion_platillo);
 		// console.log(e);
 	}
 });

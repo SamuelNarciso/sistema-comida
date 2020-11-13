@@ -36,6 +36,7 @@ const colocar_ingredientes_extra = (lista_ingredientes_extra) => {
 };
 
 export const llenado_mas_informacion = (id) => {
+    // console.log(id)
 	const foto_comida_estructura = document.querySelector(
 		'#foto_comida_estructura'
 	);
@@ -53,7 +54,7 @@ export const llenado_mas_informacion = (id) => {
                 }</h1>
                 
         <div class="precio_botonOrden">
-            <p class="precio">${datos_platillo.precio_platillo}</p>
+            <p class="precio">$${datos_platillo.precio_platillo}</p>
             <input data-id="${
 							datos_platillo.id_platillo
 						}" type="button" class="boton realizar-orden"
