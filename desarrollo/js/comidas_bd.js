@@ -1,6 +1,4 @@
-const platillos = {
-	//TODO:linea a borrar INICIO
-
+export const platillos_bd = {
 	// Yamilet
 	info_platillo_doblada_cecina: {
 		nombre_platillo: 'Doblada cecina',
@@ -683,5 +681,5 @@ const platillos = {
 		descripcion_platillo:
 			'Prueba nuestros molotes de chicharron prensado, son una fritura deliciosa con todo el sazón delicioso de Oaxaca, es una comida sencilla pero que no te arrepentiras de probarlos.',
 	},
-}; //TODO: FIN
+}; 
 

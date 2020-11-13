@@ -16,6 +16,97 @@
 		<title>Zandunguera</title>
 	</head>
 	<body>
+		<span class="opacidad recorrer_ventana"></span>
+		<div data-id="info_platillo_cecina_servida" class="mas_informacion_platillo recorrer_ventana">
+			<div class="foto_comida">
+				<img src="Assets/img/cecina_servida.JPG" alt="cecina_servida" />
+			</div>
+			<div class="informacion">
+				<input type="button" id="cerrar_mas_informacion" class="cerrar" value="X" />
+				<h1 class="titulo nombre_platillo">Cecina Servida</h1>
+
+				<div class="precio_botonOrden">
+					<p class="precio">$70</p>
+					<input data-id="info_platillo_cecina_servida" type="button" class="boton realizar-orden"
+						value="Realizar orden " />
+				</div>
+
+				<div class="ingredientes">
+					<p class="titulo">Ingredientes</p>
+					<div class="lista_ingredientes">
+						<div class="ingrediente_contenido">
+							<p class="texto_contenido">Nopales</p>
+						</div>
+						<div class="ingrediente_contenido">
+							<p class="texto_contenido">Arroz</p>
+						</div>
+						<div class="ingrediente_contenido">
+							<p class="texto_contenido">Cebolla</p>
+						</div>
+						<div class="ingrediente_contenido">
+							<p class="texto_contenido">Lechuga</p>
+						</div>
+						<div class="ingrediente_contenido">
+							<p class="texto_contenido">Frijoles</p>
+						</div>
+						<div class="ingrediente_contenido">
+							<p class="texto_contenido">Crema</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="ingredientes_extra">
+					<p class="titulo">Ingredientes extra, agregables</p>
+					<form>
+						<div class="label_input">
+							<label for="ingrediente_salsa_verde">Salsa verde</label>
+							<input type="checkbox" name="ingrediente_salsa_verde" class="ingrediente_extra"
+								id="ingrediente_salsa_verde" />
+						</div>
+
+						<div class="label_input">
+							<label for="ingrediente_salsa_roja">Salsa roja</label>
+							<input type="checkbox" name="ingrediente_salsa_roja" class="ingrediente_extra"
+								id="ingrediente_salsa_roja" />
+						</div>
+
+						<div class="label_input">
+							<label for="ingrediente_aguacate">Aguacate</label>
+							<input type="checkbox" name="ingrediente_aguacate" class="ingrediente_extra"
+								id="ingrediente_aguacate" />
+						</div>
+
+						<div class="label_input">
+							<label for="ingrediente_cebolla_asada">Cebollas asada</label>
+							<input type="checkbox" name="ingrediente_cebolla_asada" class="ingrediente_extra"
+								id="ingrediente_cebolla_asada" />
+						</div>
+
+						<div class="label_input">
+							<label for="ingrediente_jitomate">Jitomate</label>
+							<input type="checkbox" name="ingrediente_jitomate" class="ingrediente_extra"
+								id="ingrediente_jitomate" />
+						</div>
+
+					</form>
+				</div>
+
+				<div class="descripcion_comida">
+					<p class="titulo">Descripcion de la comida</p>
+					<p class="texto_contenido">
+						La
+						<span class="texto_resaltado">Cecina Servida</span> viene acompañada de nuestros ricos
+						<span class="texto_resaltado">nopales</span> y nuestro delicioso <span
+							class="texto_resaltado">arroz</span> blanco. Ademas puedes agregar algun ingrediente
+						extra si asi lo deseas.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		
+
+
 		<div class="content">
 			<header></header>
 			<main>
@@ -25,10 +116,8 @@
 
 				<section class="main">
 					<article class="categoria platillos">
-
 						<div
-							data-inicio="Aqui comienza la plantilla del div"
-							data-id="platillo_vista_previa_XXXXXXXXX"
+							data-id="info_platillo_doblada_quesillo"
 							class="platillo_vista_previa"
 						>
 							<div class="header_platillo">
@@ -43,27 +132,25 @@
 							<div class="informacion">
 								<p class="precio">$132XXX</p>
 								<input
-									data-id="platillo_vista_previa_XXXXXXXXX"
+									data-id="info_platillo_doblada_quesillo"
 									type="button"
 									class="boton_platillo boton_secundario"
 									value="Ver ingredientes"
 								/>
 								<input
-									data-id="platillo_vista_previa_XXXXXXXXX"
+									data-id="info_platillo_doblada_quesillo"
 									type="button"
 									class="boton_platillo boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
 						</div>
-					
-					
-					
 					</article>
 				</section>
 			</main>
 			<footer></footer>
-			<script src="js/comidas_bd.js"></script>
+			<script type="module" src="js/app.js"></script>
+			<!-- <script src="js/comidas_bd.js"></script> -->
 		</div>
 	</body>
 </html>
