@@ -547,7 +547,7 @@ export const platillos_bd = {
 	},
 
 	info_platillo_garnacha_oaxaquena: {
-		nombre_platillo: 'garnacha_oaxaquena',
+		nombre_platillo: 'garnacha oaxaquena',
 		id_platillo: 'info_platillo_garnacha_oaxaquena',
 		ruta_imagen_platillo: 'Assets/img/garnacha_oaxaquena.JPG',
 		alt_imagen: 'garnacha_oaxaquena',
@@ -566,7 +566,7 @@ export const platillos_bd = {
 	info_platillo_molote_pollo: {
 		nombre_platillo: 'Molote Pollo',
 		id_platillo: 'info_platillo_molote_pollo',
-		ruta_imagen_platillo: 'Assets/img/molote_pollo.JPG',
+		ruta_imagen_platillo: 'Assets/img/molote.JPG',
 		alt_imagen: 'molote_pollo',
 		precio_platillo: '$40',
 		ingredientes_principales: ['Pollo'],
@@ -585,7 +585,7 @@ export const platillos_bd = {
 	info_platillo_molote_picadillo: {
 		nombre_platillo: 'Molote Picadillo',
 		id_platillo: 'info_platillo_molote_picadillo',
-		ruta_imagen_platillo: 'Assets/img/molote_picadillo.JPG',
+		ruta_imagen_platillo: 'Assets/img/molote.JPG',
 		alt_imagen: 'molote_picadillo',
 		precio_platillo: '$40',
 		ingredientes_principales: ['Picadillo'],
@@ -604,7 +604,7 @@ export const platillos_bd = {
 	info_platillo_molote_longaniza: {
 		nombre_platillo: 'Molote Longaniza',
 		id_platillo: 'info_platillo_molote_longaniza',
-		ruta_imagen_platillo: 'Assets/img/molote_longaniza.JPG',
+		ruta_imagen_platillo: 'Assets/img/molote.JPG',
 		alt_imagen: 'molote_longaniza',
 		precio_platillo: '$40',
 		ingredientes_principales: ['Longaniza'],
@@ -623,7 +623,7 @@ export const platillos_bd = {
 	info_platillo_molote_cecina: {
 		nombre_platillo: 'Molote Cecina',
 		id_platillo: 'info_platillo_molote_cecina',
-		ruta_imagen_platillo: 'Assets/img/molote_cecina.JPG',
+		ruta_imagen_platillo: 'Assets/img/molote.JPG',
 		alt_imagen: 'molote_cecina',
 		precio_platillo: '$40',
 		ingredientes_principales: ['Cecina'],
@@ -642,7 +642,7 @@ export const platillos_bd = {
 	info_platillo_molote_quesillo: {
 		nombre_platillo: 'Molote Quesillo',
 		id_platillo: 'info_platillo_molote_quesillo',
-		ruta_imagen_platillo: 'Assets/img/molote_quesillo.JPG',
+		ruta_imagen_platillo: 'Assets/img/molote.JPG',
 		alt_imagen: 'molote_quesillo',
 		precio_platillo: '$40',
 		ingredientes_principales: ['Quesillo'],
@@ -661,7 +661,7 @@ export const platillos_bd = {
 	info_platillo_molote_chicharron_prensado: {
 		nombre_platillo: 'Molote Chicharron Prensado',
 		id_platillo: 'info_platillo_molote_chicharron_prensado',
-		ruta_imagen_platillo: 'Assets/img/molote_chicharron_prensado.JPG',
+		ruta_imagen_platillo: 'Assets/img/molote.JPG',
 		alt_imagen: 'molote_chicharron_prensado',
 		precio_platillo: '$40',
 		ingredientes_principales: ['Chicharron Prensado'],

@@ -385,35 +385,26 @@ header {
 }
 
 header .comanda {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100px;
-  height: 50px;
+  background-image: url("../Assets/svg/food_plate.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #44af69;
   border-radius: 0px 0 50px 50px;
   -webkit-box-shadow: 2px 0px 18px -5px rgba(0, 0, 0, 0.863);
           box-shadow: 2px 0px 18px -5px rgba(0, 0, 0, 0.863);
   position: absolute;
   right: 0%;
-  background-image: url("../Assets/svg/food_plate.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-transition: ease all .15s;
-  transition: ease all .15s;
+  -webkit-transition: ease all 0.15s;
+  transition: ease all 0.15s;
+  height: 50px;
+  width: 100px;
 }
 
 header .comanda:hover {
-  -webkit-transition: ease all .15s;
-  transition: ease all .15s;
-  cursor: pointer;
   background-color: #fcab10;
+  cursor: pointer;
+  -webkit-transition: ease all 0.15s;
+  transition: ease all 0.15s;
 }
 
 * {
@@ -452,31 +443,5 @@ body .content main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.algo {
-  border: 2px solid #f8333c;
-  background: #f1f1f1;
-  border-radius: 5px;
-  color: #352f2f;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 20px;
-  height: 32px;
-  opacity: 0.8;
-  position: absolute;
-  right: 0%;
-  width: 32px;
-  -webkit-transition: ease all 85.2s;
-  transition: ease all 85.2s;
-}
-
-.algo:hover {
-  opacity: 1;
-  -webkit-transition: ease all 85.2s;
-  transition: ease all 85.2s;
-  color: #f1f1f1;
-  background: #f8333c;
-  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

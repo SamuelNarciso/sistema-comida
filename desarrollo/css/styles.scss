@@ -42,26 +42,3 @@ body {
 	}
 }
 
-.algo{
-	
-	border: 2px solid $color_rojo;
-	background: $color_blanco;
-	border-radius: 5px;
-	color: $color_cafe;
-	cursor: pointer;
-	font-weight: 600;
-	font-size: 20px;
-	height: 32px;
-	opacity: 0.8;
-	position: absolute;
-	right: 0%;
-	width: 32px;
-	transition: ease all 85.2s;
-	&:hover {
-		opacity: 1;
-		transition: ease all 85.2s;
-		color: $color_blanco;
-		background: $color_rojo;
-		font-weight: 700;
-	}
-}
