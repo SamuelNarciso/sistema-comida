@@ -1,10 +1,10 @@
 import { llenado_mas_informacion } from './llenado_mas_informacion_platillos.js';
 import { buscar_ingredientes_extra } from './anadir_orden_funcion.js';
+
 const botones_primarios = document.querySelectorAll('.boton_primario');
 const botones_secundarios = document.querySelectorAll('.boton_secundario');
-// const cerrar_mas_informacion = document.querySelector(
-// 	'#cerrar_mas_informacion'
-// );
+const comanda_icono = document.querySelector('.comanda_icono');
+
 const mas_informacion_platillo = document.querySelector(
 	'.mas_informacion_platillo'
 );
@@ -14,10 +14,6 @@ const ver_ingredientes_platillo = () => {
 	mas_informacion_platillo.classList.toggle('recorrer_ventana');
 };
 
-// cerrar_mas_informacion.addEventListener('click', () => {
-// 	ver_ingredientes_platillo();
-// });
-
 botones_primarios.forEach((boton) => {
 	boton.addEventListener('click', (e) => {
 		// console.log(e.target.dataset.id);
@@ -26,24 +22,23 @@ botones_primarios.forEach((boton) => {
 
 botones_secundarios.forEach((boton) => {
 	boton.addEventListener('click', (e) => {
-		// busqueda_bd(e.target.dataset.id);
-		// console.log(e.target.dataset.id);
 		llenado_mas_informacion(e.target.dataset.id);
 		ver_ingredientes_platillo();
 	});
 });
 
 mas_informacion_platillo.addEventListener('click', (e) => {
-	// console.log(e.target.classList);
 	if (e.target.classList.contains('cerrar')) {
 		ver_ingredientes_platillo();
 	}
 
 	if (e.target.classList.contains('realizar-orden')) {
-		// ver_ingredientes_platillo();
-	
-		buscar_ingredientes_extra(e.target.dataset.id,mas_informacion_platillo);
-		// console.log(e);
+		buscar_ingredientes_extra(e.target.dataset.id, mas_informacion_platillo);
 	}
 });
-// console.log(platillos_bd['info_platillo_doblada_quesillo']);
+
+comanda_icono.addEventListener('click', () => {
+	comanda_icono.classList.toggle('bajar_icono_comanda');
+	const contenedor_comanda = document.querySelector('.contenedor_comanda');
+	contenedor_comanda.classList.toggle('bajar_comanda');
+});

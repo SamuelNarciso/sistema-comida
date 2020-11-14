@@ -1,8 +1,6 @@
 import { platillos_bd } from './comidas_bd.js';
 
 const busqueda_bd = (id) => {
-	// console.log(id);
-	// console.log(platillos_bd[`${id}`]);
 	return platillos_bd[`${id}`];
 };
 
@@ -36,7 +34,6 @@ const colocar_ingredientes_extra = (lista_ingredientes_extra) => {
 };
 
 export const llenado_mas_informacion = (id) => {
-    // console.log(id)
 	const foto_comida_estructura = document.querySelector(
 		'#foto_comida_estructura'
 	);
@@ -46,43 +43,31 @@ export const llenado_mas_informacion = (id) => {
 
 	const datos_platillo = busqueda_bd(id);
 
-	// console.log(datos_platillo);
-	const html_foto_comida = `<img src="${datos_platillo.ruta_imagen_platillo}" alt="${datos_platillo.alt_imagen}" />`;
+
+    const html_foto_comida = `<img src="${datos_platillo.ruta_imagen_platillo}" alt="${datos_platillo.alt_imagen}" />`;
+    
 	const html_informacion = `<input type="button" id="cerrar_mas_informacion" class="cerrar" value="X" />
-        <h1 class="titulo nombre_platillo">${
-					datos_platillo.nombre_platillo
-                }</h1>
-                
+        <h1 class="titulo nombre_platillo">${datos_platillo.nombre_platillo}</h1>     
         <div class="precio_botonOrden">
             <p class="precio">$${datos_platillo.precio_platillo}</p>
-            <input data-id="${
-							datos_platillo.id_platillo
-						}" type="button" class="boton realizar-orden"
-                value="Añadir a la orden " />
+            <input data-id="${datos_platillo.id_platillo}" type="button" class="boton realizar-orden"value="Añadir a la orden " />
         </div>
         <div class="ingredientes">
             <p class="titulo">Ingredientes</p>
             <div class="lista_ingredientes">
-            ${colocar_ingredientes_principales(
-							datos_platillo.ingredientes_principales
-						)}
+            ${colocar_ingredientes_principales(datos_platillo.ingredientes_principales)}
             </div>
         </div>
-
         <div class="ingredientes_extra">
             <p class="titulo">Ingredientes extra, agregables</p>
             <form>
                 ${colocar_ingredientes_extra(datos_platillo.ingredientes_extra)}
             </form>
         </div>
-
         <div class="descripcion_comida">
             <p class="titulo">Descripcion de la comida</p>
-            <p class="texto_contenido">
-            ${datos_platillo.descripcion_platillo}
-            </p>
-        </div>
-    `;
+            <p class="texto_contenido">${datos_platillo.descripcion_platillo}</p>
+        </div>`;
 
 	const html_estructura_mas_informacion = `
     <div class="foto_comida">

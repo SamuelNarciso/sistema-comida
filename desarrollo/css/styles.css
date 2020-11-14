@@ -384,7 +384,7 @@ header {
   right: 3%;
 }
 
-header .comanda {
+header .comanda_icono {
   background-image: url("../Assets/svg/food_plate.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -393,18 +393,109 @@ header .comanda {
   -webkit-box-shadow: 2px 0px 18px -5px rgba(0, 0, 0, 0.863);
           box-shadow: 2px 0px 18px -5px rgba(0, 0, 0, 0.863);
   position: absolute;
-  right: 0%;
-  -webkit-transition: ease all 0.15s;
-  transition: ease all 0.15s;
+  right: 05%;
+  -webkit-transition: ease all 0.6s;
+  transition: ease all 0.6s;
   height: 50px;
   width: 100px;
 }
 
-header .comanda:hover {
+header .comanda_icono:hover {
   background-color: #fcab10;
   cursor: pointer;
-  -webkit-transition: ease all 0.15s;
-  transition: ease all 0.15s;
+}
+
+header .contenedor_comanda {
+  text-align: center;
+  position: absolute;
+  width: 250px;
+  height: 450px;
+  right: 0%;
+  top: 0;
+  overflow: auto;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #636363cc;
+  -webkit-transition: ease all 0.6s;
+  transition: ease all 0.6s;
+}
+
+header .contenedor_comanda .titulo_principal {
+  font-size: 18px;
+  font-weight: 500;
+  color: #181818;
+  background: #fcab10;
+  width: 100%;
+  height: 7%;
+  border-bottom: 3px solid #636363cc;
+}
+
+header .contenedor_comanda .contenido_comanda_platillo {
+  -webkit-box-shadow: -2px 2px 5px 1px #b8b8b8;
+          box-shadow: -2px 2px 5px 1px #b8b8b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25%;
+  width: 95%;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+header .contenedor_comanda .contenido_comanda_platillo .titulo_comanda {
+  width: 100%;
+  height: 30%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #352f2f;
+  letter-spacing: 0.5px;
+  overflow: auto;
+  position: relative;
+  border-bottom: 3px solid #63636336;
+}
+
+header .contenedor_comanda .contenido_comanda_platillo .ingredientes_comanda {
+  width: 100%;
+  height: 70%;
+  overflow-y: auto;
+}
+
+header .contenedor_comanda .contenido_comanda_platillo .ingredientes_comanda .item {
+  font-weight: 400;
+  color: #4285f4;
+}
+
+header .bajar_icono_comanda {
+  -webkit-transition: ease all 0.6s;
+  transition: ease all 0.6s;
+  -webkit-transform: translateY(450px) rotate(180deg);
+          transform: translateY(450px) rotate(180deg);
+  border-radius: 50px 50px 0 0;
+  background-color: #fcab10;
+}
+
+header .bajar_comanda {
+  -webkit-transition: ease all 0.6s;
+  transition: ease all 0.6s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 * {
