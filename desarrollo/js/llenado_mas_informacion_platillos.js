@@ -1,5 +1,6 @@
 import { platillos_bd } from './comidas_bd.js';
 
+
 const busqueda_bd = (id) => {
 	return platillos_bd[`${id}`];
 };
