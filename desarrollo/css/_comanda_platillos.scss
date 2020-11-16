@@ -1,5 +1,5 @@
 header {
-	z-index: 2;
+	z-index: 4;
 	height: 0%;
 	width: 100%;
 	position: relative;
@@ -23,7 +23,10 @@ header {
 			cursor: pointer;
 		}
 	}
-
+	.comanda_sin_platillos {
+		transform: translateY(-100%);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 1s;
+	}
 	.contenedor_comanda {
 		position: absolute;
 		width: 250px;
@@ -45,7 +48,7 @@ header {
 			height: 7%;
 			border-bottom: 3px solid #636363cc;
 		}
-		.total_comanda{
+		.total_comanda {
 			position: absolute;
 			bottom: 0;
 			width: 100%;
@@ -55,8 +58,8 @@ header {
 			text-align: center;
 			color: $color_blanco;
 
-			#costo_total_comanda{
-				letter-spacing: .5px;
+			#costo_total_comanda {
+				letter-spacing: 0.5px;
 			}
 		}
 		.lista_comandas {
@@ -118,9 +121,8 @@ header {
 						font-weight: 400;
 						color: $color_azul;
 					}
-					.color_rojo{
+					.color_rojo {
 						color: $color_rojo;
-
 					}
 				}
 			}
@@ -136,5 +138,75 @@ header {
 	.bajar_comanda {
 		transition: ease all 0.6s;
 		transform: translateY(-100%);
+	}
+}
+
+.animacion_orden_anadido {
+	animation: animacion_burbuja 1s ease 0s normal none;
+	position: absolute;
+	top: -10%;
+	background-color: $color_blanco;
+	width: 145px;
+	height: 100px;
+	box-shadow: 0px 0px 18px -5px $color_negro;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid $color_blanco;
+	z-index: 5;
+	p{
+		position: absolute;
+		bottom: 80%;
+		font-weight: 500;
+		letter-spacing: .5px;
+	}
+	img {
+		z-index: 5;
+		filter: drop-shadow(0 0 1px $color_cafe);
+	}
+	.costados {
+		height: 60px;
+		width: 14px;
+		animation: animacion_centro 1.5s ease 0s normal none;
+	}
+	.centro {
+		width: 80px;
+		animation: animacion_centro 1.2s ease 0s normal none;
+		
+	}
+	.triangulo{
+		position: absolute;
+		z-index: 4;
+		border-bottom: 1px solid #1818183d;
+		border-right: 1px solid  #1818186b;
+		width:  30px;
+		height: 30px;
+		background: $color_blanco;
+		bottom: -18px;
+		transform: rotate(45deg);
+	}
+	
+}
+
+@keyframes animacion_burbuja {
+	0.0% {
+		transform: translate(0, 100px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes animacion_centro {
+	0.0% {
+		transform: translate(0, 100px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
 	}
 }

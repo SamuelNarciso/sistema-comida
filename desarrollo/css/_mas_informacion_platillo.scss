@@ -82,6 +82,7 @@
 				letter-spacing: 0.5px;
 				width: 40%;
 				transition: ease all 0.3s;
+				position: relative;
 				&:hover {
 					transition: ease all 0.3s;
 					color: #ffffff;
@@ -91,6 +92,7 @@
 		}
 
 		.ingredientes {
+			position: relative;
 			height: 30%;
 			display: flex;
 			flex-direction: row;
@@ -111,6 +113,16 @@
 					height: 20%;
 					text-align: center;
 				}
+			}
+
+			&::before{
+				background: $color_cafe;
+				content: '';
+				position: absolute;
+				width: 80%;
+				height: 1.5px;
+				bottom: 0;
+				left: 10%;
 			}
 		}
 

@@ -1,0 +1,17 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="icon">
+   <circle id="svg_1" transform="matrix(0.383,-0.924,0.924,0.383,-17.936,101.157) " r="44.207" fill="#e39ca5" cy="63.89366" cx="66.98455"/>
+   <circle id="svg_2" transform="matrix(0.383,-0.924,0.924,0.383,-17.936,101.157) " r="36.392" fill="#dbe2eb" cy="63.89366" cx="66.98455"/>
+   <g id="svg_3" opacity="0.25">
+    <path id="svg_4" fill="#c1cdd3" d="m103.12,63.72222a36.394,36.394 0 0 1 -67.65,18.643a36.394,36.394 0 0 0 56.24,-45.109a36.29,36.29 0 0 1 11.41,26.466z"/>
+   </g>
+  </g>
+ </g>
+</svg>

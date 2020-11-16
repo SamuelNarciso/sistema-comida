@@ -111,6 +111,7 @@
   width: 40%;
   -webkit-transition: ease all 0.3s;
   transition: ease all 0.3s;
+  position: relative;
 }
 
 .mas_informacion_platillo .informacion .precio_botonOrden .realizar-orden:hover {
@@ -121,6 +122,7 @@
 }
 
 .mas_informacion_platillo .informacion .ingredientes {
+  position: relative;
   height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,6 +160,16 @@
   width: 50%;
   height: 20%;
   text-align: center;
+}
+
+.mas_informacion_platillo .informacion .ingredientes::before {
+  background: #352f2f;
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 1.5px;
+  bottom: 0;
+  left: 10%;
 }
 
 .mas_informacion_platillo .informacion .ingredientes_extra {
@@ -316,6 +328,7 @@ main .main .categoria .platillo_vista_previa .informacion {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 main .main .categoria .platillo_vista_previa .informacion .precio {
@@ -377,7 +390,7 @@ main .main .platillos::before {
 }
 
 header {
-  z-index: 2;
+  z-index: 4;
   height: 0%;
   width: 100%;
   position: relative;
@@ -403,6 +416,13 @@ header .comanda_icono {
 header .comanda_icono:hover {
   background-color: #fcab10;
   cursor: pointer;
+}
+
+header .comanda_sin_platillos {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 1s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 1s;
 }
 
 header .contenedor_comanda {
@@ -441,7 +461,7 @@ header .contenedor_comanda .total_comanda {
 }
 
 header .contenedor_comanda .total_comanda #costo_total_comanda {
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 header .contenedor_comanda .lista_comandas {
@@ -544,6 +564,121 @@ header .bajar_comanda {
   transition: ease all 0.6s;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.animacion_orden_anadido {
+  -webkit-animation: animacion_burbuja 1s ease 0s normal none;
+          animation: animacion_burbuja 1s ease 0s normal none;
+  position: absolute;
+  top: -10%;
+  background-color: #f1f1f1;
+  width: 145px;
+  height: 100px;
+  -webkit-box-shadow: 0px 0px 18px -5px #212121;
+          box-shadow: 0px 0px 18px -5px #212121;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #f1f1f1;
+  z-index: 5;
+}
+
+.animacion_orden_anadido p {
+  position: absolute;
+  bottom: 80%;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.animacion_orden_anadido img {
+  z-index: 5;
+  -webkit-filter: drop-shadow(0 0 1px #352f2f);
+          filter: drop-shadow(0 0 1px #352f2f);
+}
+
+.animacion_orden_anadido .costados {
+  height: 60px;
+  width: 14px;
+  -webkit-animation: animacion_centro 1.5s ease 0s normal none;
+          animation: animacion_centro 1.5s ease 0s normal none;
+}
+
+.animacion_orden_anadido .centro {
+  width: 80px;
+  -webkit-animation: animacion_centro 1.2s ease 0s normal none;
+          animation: animacion_centro 1.2s ease 0s normal none;
+}
+
+.animacion_orden_anadido .triangulo {
+  position: absolute;
+  z-index: 4;
+  border-bottom: 1px solid #1818183d;
+  border-right: 1px solid  #1818186b;
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  bottom: -18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@-webkit-keyframes animacion_burbuja {
+  0.0% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes animacion_burbuja {
+  0.0% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes animacion_centro {
+  0.0% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes animacion_centro {
+  0.0% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
 }
 
 * {
