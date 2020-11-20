@@ -6,17 +6,17 @@ export class lista_comandas {
 	calcular_precio_total() {
 		const costo_total_comanda = document.querySelector('#costo_total_comanda');
 		const comanda_icono = document.querySelector('.comanda_icono');
+		const cantidad_platillos = document.querySelector('.cantidad_platillos');
 		let precio_total = 0;
 		if (this.lista_comanda.length > 0) {
 			this.lista_comanda.forEach((platillo) => {
-				precio_total += platillo.precio*1;
+				precio_total += platillo.precio * 1;
 			});
 			comanda_icono.classList.remove('comanda_sin_platillos');
-		}else{
+		} else {
 			comanda_icono.classList.add('comanda_sin_platillos');
-			
 		}
-
+		cantidad_platillos.textContent = this.lista_comanda.length;
 		costo_total_comanda.textContent = '' + precio_total;
 	}
 

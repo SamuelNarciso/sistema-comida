@@ -58,7 +58,7 @@ main {
 					position: relative;
 					.precio {
 						font-weight: 600;
-						font-size: 18px;
+						font-size: 22px;
 						color: $color_azul;
 						text-align: center;
 						height: 20%;
@@ -83,7 +83,7 @@ main {
 						// border: 1px solid $color_verde;
 						border-top: 1px solid $color_verde;
 						border-bottom: 1px solid $color_verde;
-						margin-bottom: 5px;
+						margin-bottom: 0px;
 						color: $color_cafe;
 						&:hover {
 							color: $color_blanco;

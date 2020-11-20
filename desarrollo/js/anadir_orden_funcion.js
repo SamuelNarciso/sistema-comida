@@ -1,7 +1,7 @@
 import { platillos_bd } from './comidas_bd.js';
 import { comanda } from './comanda.class.js';
 import { lista_comandas } from './lista_comandas.class.js';
-const lista_comanda = new lista_comandas();
+export const lista_comanda = new lista_comandas();
 
 export const crear_comanda = (
 	id,
