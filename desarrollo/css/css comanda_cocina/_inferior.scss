@@ -1,0 +1,45 @@
+.inferior {
+	width: 100%;
+	height: 40%;
+	position: relative;
+
+	.datos_comida {
+		border-radius: 08px;
+		position: absolute;
+		width: 72%;
+		left: 2%;
+		top: -10%;
+		height: 100%;
+		box-shadow: 0px 7px 27px -1px #352f2fbd;
+		background: $color_blanco;
+
+		.titulo_datos {
+			width: 100%;
+			height: 20%;
+			background: $color_amarillo;
+			border-radius: 8px 8px 0 0;
+			font-weight: 700;
+			text-align: center;
+			color: $color_cafe;
+			font-size: 32px;
+		}
+		.dato {
+			border-radius: 0 0 8px 8px;
+			background: #464141;
+			width: 100%;
+            height: 80%;
+            padding: 2%;
+            overflow: auto;
+            
+			p {
+				font-weight: 500;
+				text-align: justify;
+				color: $color_blanco;
+            }
+            
+            .resaltado{
+                color: $color_verde;
+            }
+		}
+	}
+}

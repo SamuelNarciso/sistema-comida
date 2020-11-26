@@ -1,45 +1,554 @@
-.comanda {
-  width: 90%;
-  height: 50%;
-  margin: 0 auto;
-  background: #4285f4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+.superior {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+.superior .izquierda {
+  overflow: hidden;
+  height: 100%;
+}
+
+.superior .izquierda h1 {
+  position: relative;
+  width: 100%;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  font-family: 'Amatic SC';
+  font-size: 6vh;
+  color: #333;
+  opacity: 0.75;
+  -webkit-animation: pulse 2.5s linear infinite;
+          animation: pulse 2.5s linear infinite;
 }
 
-.comanda .titulo_comanda {
-  font-weight: 500;
+.superior .izquierda #cooking {
+  position: relative;
+  left: 23%;
+  top: -15%;
+  width: 40%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.superior .izquierda #cooking .bubble {
+  position: absolute;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 0.25vh #4d4d4d;
+          box-shadow: 0 0 0.25vh #4d4d4d;
+  opacity: 0;
+}
+
+.superior .izquierda #cooking .bubble:nth-child(1) {
+  margin-top: 2.5vh;
+  left: 58%;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-color: #454545;
+  -webkit-animation: bubble 2s cubic-bezier(0.53, 0.16, 0.39, 0.96) infinite;
+          animation: bubble 2s cubic-bezier(0.53, 0.16, 0.39, 0.96) infinite;
+}
+
+.superior .izquierda #cooking .bubble:nth-child(2) {
+  margin-top: 3vh;
+  left: 52%;
+  width: 2vh;
+  height: 2vh;
+  background-color: #3d3d3d;
+  -webkit-animation: bubble 2s ease-in-out 0.35s infinite;
+          animation: bubble 2s ease-in-out 0.35s infinite;
+}
+
+.superior .izquierda #cooking .bubble:nth-child(3) {
+  margin-top: 1.8vh;
+  left: 50%;
+  width: 1.5vh;
+  height: 1.5vh;
+  background-color: #333;
+  -webkit-animation: bubble 1.5s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
+          animation: bubble 1.5s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
+}
+
+.superior .izquierda #cooking .bubble:nth-child(4) {
+  margin-top: 2.7vh;
+  left: 56%;
+  width: 1.2vh;
+  height: 1.2vh;
+  background-color: #2b2b2b;
+  -webkit-animation: bubble 1.8s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.9s infinite;
+          animation: bubble 1.8s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.9s infinite;
+}
+
+.superior .izquierda #cooking .bubble:nth-child(5) {
+  margin-top: 2.7vh;
+  left: 63%;
+  width: 1.1vh;
+  height: 1.1vh;
+  background-color: #242424;
+  -webkit-animation: bubble 1.6s ease-in-out 1s infinite;
+          animation: bubble 1.6s ease-in-out 1s infinite;
+}
+
+.superior .izquierda #cooking #area {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  -webkit-transform-origin: 15% 60%;
+          transform-origin: 15% 60%;
+  -webkit-animation: flip 2.5s ease-in-out infinite;
+          animation: flip 2.5s ease-in-out infinite;
+}
+
+.superior .izquierda #cooking #area #sides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 15% 60%;
+          transform-origin: 15% 60%;
+  -webkit-animation: switchSide 2.5s ease-in-out infinite;
+          animation: switchSide 2.5s ease-in-out infinite;
+}
+
+.superior .izquierda #cooking #area #sides #handle {
+  position: absolute;
+  bottom: 18%;
+  right: 80%;
+  width: 35%;
+  height: 20%;
+  background-color: transparent;
+  border-top: 1vh solid #333;
+  border-left: 1vh solid transparent;
+  border-radius: 100%;
+  -webkit-transform: rotate(20deg) rotateX(0deg) scale(1.3, 0.9);
+          transform: rotate(20deg) rotateX(0deg) scale(1.3, 0.9);
+}
+
+.superior .izquierda #cooking #area #sides #pan {
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+  width: 50%;
+  height: 8%;
+  background-color: #333;
+  border-radius: 0 0 1.4em 1.4em;
+  -webkit-transform-origin: -15% 0;
+          transform-origin: -15% 0;
+}
+
+.superior .izquierda #cooking #area #pancake {
+  position: absolute;
+  top: 24%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateX(85deg);
+          transform: rotateX(85deg);
+  -webkit-animation: jump 2.5s ease-in-out infinite;
+          animation: jump 2.5s ease-in-out infinite;
+}
+
+.superior .izquierda #cooking #area #pancake #pastry {
+  position: absolute;
+  bottom: 26%;
+  right: 37%;
+  width: 40%;
+  height: 45%;
+  background-color: #333;
+  -webkit-box-shadow: 0 0 3px 0 #333;
+          box-shadow: 0 0 3px 0 #333;
+  border-radius: 100%;
+  -webkit-transform-origin: -20% 0;
+          transform-origin: -20% 0;
+  -webkit-animation: fly 2.5s ease-in-out infinite;
+          animation: fly 2.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 24%;
+    -webkit-transform: rotateX(85deg);
+            transform: rotateX(85deg);
+  }
+  25% {
+    top: 10%;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    top: 30%;
+    -webkit-transform: rotateX(85deg);
+            transform: rotateX(85deg);
+  }
+  75% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(85deg);
+            transform: rotateX(85deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 24%;
+    -webkit-transform: rotateX(85deg);
+            transform: rotateX(85deg);
+  }
+  25% {
+    top: 10%;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    top: 30%;
+    -webkit-transform: rotateX(85deg);
+            transform: rotateX(85deg);
+  }
+  75% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(85deg);
+            transform: rotateX(85deg);
+  }
+}
+
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  5% {
+    -webkit-transform: rotate(-27deg);
+            transform: rotate(-27deg);
+  }
+  30%,
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  55% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+  83.3% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes flip {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  5% {
+    -webkit-transform: rotate(-27deg);
+            transform: rotate(-27deg);
+  }
+  30%,
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  55% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+  83.3% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes switchSide {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes switchSide {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes fly {
+  0% {
+    bottom: 26%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    bottom: 40%;
+  }
+  50% {
+    bottom: 26%;
+    -webkit-transform: rotate(-190deg);
+            transform: rotate(-190deg);
+  }
+  80% {
+    bottom: 40%;
+  }
+  100% {
+    bottom: 26%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes fly {
+  0% {
+    bottom: 26%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    bottom: 40%;
+  }
+  50% {
+    bottom: 26%;
+    -webkit-transform: rotate(-190deg);
+            transform: rotate(-190deg);
+  }
+  80% {
+    bottom: 40%;
+  }
+  100% {
+    bottom: 26%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes bubble {
+  0% {
+    -webkit-transform: scale(0.15, 0.15);
+            transform: scale(0.15, 0.15);
+    top: 80%;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.33, 0.33);
+            transform: scale(0.33, 0.33);
+    top: 60%;
+    opacity: 0;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    -webkit-transform: scale(0.15, 0.15);
+            transform: scale(0.15, 0.15);
+    top: 80%;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.33, 0.33);
+            transform: scale(0.33, 0.33);
+    top: 60%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.25;
+  }
+  50% {
+    -webkit-transform: scale(1.2, 1);
+            transform: scale(1.2, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.25;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.25;
+  }
+  50% {
+    -webkit-transform: scale(1.2, 1);
+            transform: scale(1.2, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.25;
+  }
+}
+
+.superior .derecha {
+  position: absolute;
+  width: 23%;
+  height: 160%;
+  top: 0px;
+  right: 02%;
+  -webkit-box-shadow: 0px 7px 27px -1px #352f2fbd;
+          box-shadow: 0px 7px 27px -1px #352f2fbd;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+
+.superior .derecha .titulo_general {
+  top: 0;
+  height: 8%;
+  z-index: 2;
+  background: #352f2f;
+}
+
+.superior .derecha .lista_comandas_platillos {
+  overflow: auto;
+  -webkit-transform: translateY(9%);
+          transform: translateY(9%);
+  height: 86%;
+}
+
+.superior .derecha .lista_comandas_platillos .contenido_comanda_platillo {
+  margin: 10px auto;
+  width: 90%;
+  height: 25%;
+  -webkit-box-shadow: -2px 2px 5px 1px #b8b8b8;
+          box-shadow: -2px 2px 5px 1px #b8b8b8;
+  border-radius: 8px;
+  position: relative;
+  background: #f1f1f1;
+}
+
+.superior .derecha .lista_comandas_platillos .contenido_comanda_platillo .titulo_comanda {
+  background: #fcab10;
+  color: #352f2f;
+  text-align: center;
+  letter-spacing: 0.5px;
+  overflow: auto;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  height: 18%;
+  border-radius: 8px 8px 0 0;
+}
+
+.superior .derecha .lista_comandas_platillos .contenido_comanda_platillo .ingredientes_comanda {
+  overflow: auto;
+  width: 100%;
+  height: 61%;
+  font-weight: 400;
+  text-align: center;
+  color: #212121;
+}
+
+.superior .derecha .precio_total {
+  height: 6%;
+}
+
+.precio {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background: #44af69;
+  text-align: center;
+  font-weight: 700;
   color: #f1f1f1;
-  font-size: 24px;
-  width: 100%;
-  height: 15%;
-  text-decoration: underline;
+  font-size: 20px;
+  border-radius: 0 0 8px 8px;
 }
 
-.comanda .platillos {
+.inferior {
   width: 100%;
-  height: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 40%;
+  position: relative;
+}
+
+.inferior .datos_comida {
+  border-radius: 08px;
+  position: absolute;
+  width: 72%;
+  left: 2%;
+  top: -10%;
+  height: 100%;
+  -webkit-box-shadow: 0px 7px 27px -1px #352f2fbd;
+          box-shadow: 0px 7px 27px -1px #352f2fbd;
+  background: #f1f1f1;
+}
+
+.inferior .datos_comida .titulo_datos {
+  width: 100%;
+  height: 20%;
+  background: #fcab10;
+  border-radius: 8px 8px 0 0;
+  font-weight: 700;
+  text-align: center;
+  color: #352f2f;
+  font-size: 32px;
+}
+
+.inferior .datos_comida .dato {
+  border-radius: 0 0 8px 8px;
+  background: #464141;
+  width: 100%;
+  height: 80%;
+  padding: 2%;
+  overflow: auto;
+}
+
+.inferior .datos_comida .dato p {
+  font-weight: 500;
+  text-align: justify;
+  color: #f1f1f1;
+}
+
+.inferior .datos_comida .dato .resaltado {
+  color: #44af69;
 }
 
 * {

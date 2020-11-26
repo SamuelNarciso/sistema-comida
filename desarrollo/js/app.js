@@ -9,7 +9,7 @@ const lista_comandas = document.querySelector('.lista_comandas');
 const mas_informacion_platillo = document.querySelector(
 	'.mas_informacion_platillo'
 );
-const mandar_a_cocina = document.querySelector('.mandar_a_cocina');
+const mandar_a_cocina = document.querySelector('#mandar_a_cocina');
 
 const ver_ingredientes_platillo = () => {
 	document.querySelector('.opacidad').classList.toggle('recorrer_ventana');
