@@ -1,3 +1,4 @@
+import { colocar_platillos } from "../mandar_a_cocina.js";
 const db = firebase.firestore();
 
 export const agregar_a_cocina = (comanda, numero_mesa, total, fecha) => {
@@ -12,25 +13,26 @@ export const agregar_a_cocina = (comanda, numero_mesa, total, fecha) => {
 		})
 		.then(function (docRef) {
 			console.log('Document written with ID: ', docRef.id);
-			// setTimeout(() => {
-			// window.location.href = `comanda_en_cocina.html/?parm1=${docRef.id}`; // }, 1000);
-			window.location.href = `comanda_en_cocina.html`; // }, 1000);
+			window.location.href = `comanda_en_cocina.html?id=${docRef.id}`; // }, 1000);
+		
 		})
 		.catch(function (error) {
 			console.error('Error adding document: ', error);
 		});
 };
 
-const consultar_datos_comanda = () => {
-	let docRef = db.collection('en_cocina').doc('SF');
+export const consultar_datos_comanda = (id_comanda) => {
+	let docRef = db.collection('en_cocina').doc(id_comanda);
 
 	docRef
 		.get()
 		.then(function (doc) {
 			if (doc.exists) {
-				console.log('Document data:', doc.data());
+				// console.log('Document data:', doc.data());
+				const datos = doc.data();
+				colocar_platillos(datos)
+				// return datos;
 			} else {
-				// doc.data() will be undefined in this case
 				console.log('No such document!');
 			}
 		})

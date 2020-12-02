@@ -1,5 +1,9 @@
 import { lista_comanda, extraer_ingredientes } from './anadir_orden_funcion.js';
-import { agregar_a_cocina } from './firebase/metodos_firebase.js';
+import { platillos_bd } from './comidas_bd.js';
+import {
+	agregar_a_cocina,
+	consultar_datos_comanda,
+} from './firebase/metodos_firebase.js';
 
 const calcular_total = (lista) => {
 	let total = 0;
@@ -10,19 +14,21 @@ const calcular_total = (lista) => {
 };
 
 const obtener_platillos_ingredientes = (lista) => {
+	console.log(lista);
 	let platillos_ingredientes = [];
 
 	lista.forEach((platillo) => {
 		platillos_ingredientes.push({
 			nombre: platillo.nombre,
 			ingredientes: platillo.ingredientes,
+			precio: platillo.precio,
 		});
 	});
 
 	platillos_ingredientes =
 		platillos_ingredientes.length > 0 ? platillos_ingredientes : null;
-	
-		return platillos_ingredientes;
+
+	return platillos_ingredientes;
 };
 
 const obtener_platillos_comanda = (platillo) => {
@@ -41,22 +47,21 @@ const obtener_platillos_comanda = (platillo) => {
 	return html;
 };
 
-export const colocar_platillos = () => {
+export const colocar_platillos = (comanda_data) => {
 	const referencia_lista_comandas_platillos = document.querySelector(
 		'.lista_comandas_platillos'
 	);
 
 	referencia_lista_comandas_platillos.innerHTML = '';
-	console.log(lista_comanda.lista_comanda);
-	const lista_platillos_comanda = lista_comanda.lista_comanda;
 
 	let platillosHTML = ``;
-
-	lista_platillos_comanda.forEach((platillo) => {
+	comanda_data.comanda.forEach((platillo) => {
 		platillosHTML += obtener_platillos_comanda(platillo);
 	});
 
-	referencia_lista_comandas_platillos.innerHTML = ` <p class="titulo_principal">Orden completa</p> `;
+	console.log(comanda_data);
+	document.querySelector('.precio_total').textContent = '$ ' +comanda_data.total;
+	referencia_lista_comandas_platillos.innerHTML = platillosHTML;
 };
 
 export const registrar_platillos = () => {
@@ -69,6 +74,11 @@ export const registrar_platillos = () => {
 		obtener_platillos_ingredientes(lista_platillos_comanda),
 		1,
 		calcular_total(lista_platillos_comanda),
-		fecha,
+		fecha
 	);
 };
+
+// console.log(id_comanda);
+// const comanda_data = consultar_datos_comanda(id_comanda);
+// consultar_datos_comanda(id_comanda);
+// ;
