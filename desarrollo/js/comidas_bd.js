@@ -101,7 +101,7 @@ export const platillos_bd = {
 	},
 
 	info_platillo_albondigas: {
-		nombre_platillo: 'Chilaquiles',
+		nombre_platillo: 'Albondigas',
 		id_platillo: 'info_platillo_albondigas',
 		ruta_imagen_platillo: 'Assets/img/Albondigas.jpg',
 		alt_imagen: 'Albondigas',
@@ -174,7 +174,7 @@ export const platillos_bd = {
 	},
 
 	//TODO: Fabian:
-	info_platillo_molotes_servidos : {
+	info_platillo_molotes_servidos: {
 		nombre_platillo: 'Molotes',
 		id_platillo: 'info_platillo_molotes_servidos',
 		ruta_imagen_platillo: 'Assets/img/Molotes.JPG',
@@ -185,8 +185,8 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Este platillo consta de 3 deliciosos molotes de bistec con papa, con la pisibilidad de agregar un ingrediente extra',
 	},
-	
-	info_platillo_mole_pollo_servido : {
+
+	info_platillo_mole_pollo_servido: {
 		nombre_platillo: 'Mole con Pollo',
 		id_platillo: 'info_platillo_mole_pollo_servido',
 		ruta_imagen_platillo: 'Assets/img/MolePollo.JPG',
@@ -197,56 +197,62 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Este delicioso platillo consta de una pieza de pollo bañada en mole junto con un decilioso arroz, con la posibilidad de agregar frijoles al delicioso platillo',
 	},
-	
-	info_platillo_enchilada_mole_servido : {
+
+	info_platillo_enchilada_mole_servido: {
 		nombre_platillo: 'Enchiladas de Mole',
 		id_platillo: 'info_platillo_enchilada_mole_servido',
 		ruta_imagen_platillo: 'Assets/img/EnchiladaMole.JPG',
 		alt_imagen: 'Enchilada_mole_servido',
 		precio_platillo: '45',
-		ingredientes_principales: ['Lechuga', 'Queso', 'Crema', 'Cebolla', 'Jitomate'],
+		ingredientes_principales: [
+			'Lechuga',
+			'Queso',
+			'Crema',
+			'Cebolla',
+			'Jitomate',
+		],
 		ingredientes_extra: ['Aguacate'],
 		descripcion_platillo:
 			'Nuestras exquisitas enchiladas de mole son muy pedidaas por los clientes, ya que es una orden de 3 y cuenta con la posibilidad de algun ingrediente extra ',
 	},
-	
-	info_platillo_picada_pollo : {
+
+	info_platillo_picada_pollo: {
 		nombre_platillo: 'Picada de pollo',
 		id_platillo: 'info_platillo_picada_pollo',
 		ruta_imagen_platillo: 'Assets/img/picapollo.jpg',
 		alt_imagen: 'Picada_Pollo',
 		precio_platillo: '15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga','Quesillo'],
+		ingredientes_extra: ['Lechuga', 'Quesillo'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de pollo pueden ser acompañadas por lechuga o quisillo si asi lo desea el cliente para mayor agrado',
 	},
-	
-	info_platillo_picada_chicha_servida : {
+
+	info_platillo_picada_chicha_servida: {
 		nombre_platillo: 'Picada de chicharrón prensado',
 		id_platillo: 'info_platillo_picada_chicha_servida',
 		ruta_imagen_platillo: 'Assets/img/PicaChicha.JPG',
 		alt_imagen: 'Picada_Chicha_servida',
 		precio_platillo: '15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga','Quesillo'],
+		ingredientes_extra: ['Lechuga', 'Quesillo'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de chicharron prensado pueden ser acompañadas por lechuga o quisillo si asi lo desea el cliente para mayor agrado',
 	},
-	
-	info_platillo_picada_cecina_servida : {
+
+	info_platillo_picada_cecina_servida: {
 		nombre_platillo: 'Picada de cecina',
 		id_platillo: 'info_platillo_picada_cecina_servida',
 		ruta_imagen_platillo: 'Assets/img/PicaCeci.jpg',
 		alt_imagen: 'Picada_Cecina_servida',
 		precio_platillo: '15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga','Aguacate'],
+		ingredientes_extra: ['Lechuga', 'Aguacate'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de cecina pueden ser acompañadas por lechuga o aguacate si asi lo desea el cliente para mayor agrado',
 	},
-	
-	info_platillo_picada_quesillo_servida : {
+
+	info_platillo_picada_quesillo_servida: {
 		nombre_platillo: 'Picada de quesillo',
 		id_platillo: 'info_platillo_picada_quesillo_servida',
 		ruta_imagen_platillo: 'Assets/img/PicaQuesillo.jpg',
@@ -257,31 +263,31 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de quesillo son una excelente opcion y pueden ser acompañadas por lechuga si asi lo desea el cliente para mayor agrado',
 	},
-	
-	info_platillo_picada_longaniza : {
+
+	info_platillo_picada_longaniza: {
 		nombre_platillo: 'Picada de Longaniza',
 		id_platillo: 'info_platillo_picada_longaniza',
 		ruta_imagen_platillo: 'Assets/img/PicaLonga.jpg',
 		alt_imagen: 'Picada_longaniza',
 		precio_platillo: '15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga','Aguacate'],
+		ingredientes_extra: ['Lechuga', 'Aguacate'],
 		descripcion_platillo:
 			'Nuestras maravillosas picadas de longaniza son una excelente opcion y pueden ser acompañadas por lechuga o aguacate si asi lo desea el cliente para mayor agrado',
 	},
-	
-	info_platillo_picadapicadillo_servida : {
+
+	info_platillo_picadapicadillo_servida: {
 		nombre_platillo: 'Picada de picadillo',
 		id_platillo: 'info_platillo_picadapicadillo_servida',
 		ruta_imagen_platillo: 'Assets/img/PIcaPica.JPG',
 		alt_imagen: 'PicadaPicadillo_servida',
 		precio_platillo: '15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga','Quesillo'],
+		ingredientes_extra: ['Lechuga', 'Quesillo'],
 		descripcion_platillo:
 			'Las exquisitas picadas de picadillo son una excelente opcion y pueden ser acompañadas por lechuga o quesillo para mayor agrado del cliente',
 	},
-	
+
 	info_platillo_dobladapollo_servida: {
 		nombre_platillo: 'Doblada de pollo',
 		id_platillo: 'info_platillo_dobladapollo_servida',
@@ -289,11 +295,11 @@ export const platillos_bd = {
 		alt_imagen: 'DobladaPollo_servida',
 		precio_platillo: '15',
 		ingredientes_principales: ['Salsa', 'Manteca', 'queso y crema'],
-		ingredientes_extra: ['Lechuga','Quesillo'],
+		ingredientes_extra: ['Lechuga', 'Quesillo'],
 		descripcion_platillo:
 			'Las exquisitas dobladas de pollo son una excelente opcion y pueden ser acompañadas por lechuga o quesillo para mayor agrado del cliente',
 	},
-	
+
 	info_platillo_dobladachicha_servida: {
 		nombre_platillo: 'Doblada de chicharrón prensado',
 		id_platillo: 'info_platillo_dobladachicha_servida',
@@ -305,9 +311,7 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Nuestras exquisitas dobladas de chicharron prensado son una excelente opcion para los clientes y pueden ser acompañadas por lechuga para mayor agrado',
 	},
-	
-	
-	
+
 	//TODO: Eve:
 	info_platillo_aguajamaicamedio: {
 		nombre_platillo: 'Agua de Jamaica de 1/2',
@@ -676,5 +680,178 @@ export const platillos_bd = {
 		descripcion_platillo:
 			'Prueba nuestros molotes de chicharron prensado, son una fritura deliciosa con todo el sazón delicioso de Oaxaca, es una comida sencilla pero que no te arrepentiras de probarlos.',
 	},
-}; 
+};
 
+export const datos_curiosos_bd = [
+	//Campos Enoc:
+	{
+		titulo: 'Un sándwich realmente caro',
+		descripcion:
+			'Un estudio hecho por hotels.com demostró que el club sándwich más caro del mundo cuesta aproximadamente 48 dólares, poco menos de $1000 MXN y lo preparan en un hotel de lujo en Ginebra, Suiza',
+	},
+
+	{
+		titulo: 'Parecidas en sabor pero no iguales en olor',
+		descripcion:
+			'Aunque no lo creas, las manzanas, las papas, y las cebollas tienen el mismo sabor, ya que las tres poseen una consistencia similar. Si estás agripado y no puedes respirar por la congestión nasal, te dará exactamente igual comerte una manzana, una cebolla, o una papa; lo único que las diferencia una a la otra es su olor y si no puedes percibirlo, tus papilas gustativas no podrán decodificar lo que realmente estás comiendo. ¿Lo intentarías?',
+	},
+	{
+		titulo: 'Las pizzas en el mundo',
+		descripcion:
+			'Si eres de los que se escandaliza con la piña en la pizza, déjanos decirte que las pizzas en otras regiones del mundo tienen ingredientes extras un poco extraños para lo que habitualmente comemos en nuestras pizzerías favoritas. Mientras los mexicanos agregas chiles serranos, chorizo y camarones, en Brasil el ingrediente más popular de la pizza son los chícharos, mientras que en Japón es muy común encontrar pizzas con mayonesa. Por su parte, en Rusia la pizza Москва (Moscú, en ruso) es la más popular, que incluye cuatro tipos de pescado: atún, salmón, caballa y sardinas.',
+	},
+
+	{
+		titulo: 'Picante, muy picante',
+		descripcion:
+			'La pungencia es la sensación picante, ardiente o irritante que podemos sentir en la lengua, boca e incluso nariz provocada por determinados alimentos, como chiles, cebollas, ajos o tubérculos como el jengibre. Esta sensación de irritación es causada por compuestos químicos, como el sulfuro en la cebolla y la capsaicina en los chiles, como un mecanismo de defensa de los vegetales contra los ataques de animales; sin embargo, en los seres humanos provoca una sensación placentera. Incluso para poder medirla existe la escala de Scoville que se mide de 0 a 16 millones de SHU (unidades Scoville); actualmente el chile más picante del mundo es el Carolina Reaper, quien cuenta hasta con 2’180,000 SHU. El tope del SHU se alcanza en laboratorios por medio de la creación de capsaicina pura para instrumentos bélicos…',
+	},
+	{
+		titulo: 'Hot dog… ¿peligroso?',
+		descripcion:
+			'Aunque no lo creas, uno de los alimentos que más consumen los niños son los hot dogs, mismos que en Acapulco podemos encontrar en cada esquina por la Costera envueltos en tocino y fritos sobre una plancha. Pero no son aditivos ni tampoco que se preparen en plena acera lo que los vuelve peligrosos, sino que según estadísticas del Johns Hopkins Medicine, ubicado en Baltimore, Maryland y que además es uno de los sistemas de salud y atención médica más prestigiosos en el mundo, revelaron que los hot dogs son la causa número uno de lesiones relacionadas con la asfixia en niños menores de tres años. Es por esto que la próxima vez que tus niños o tú vayan a comer un hot dog, recuerdes masticar muy bien y despacio antes de deglutirlo.',
+	},
+
+	{
+		titulo: 'La mentira de las zanahorias',
+		descripcion:
+			'Durante muchos años se ha creído que comer muchas zanahorias era bueno para la vista, sin embargo esta es una vil mentira… El mito de que las zanahorias son buenas para la vista tiene lugar en tiempos de la Segunda Guerra Mundial, cuando las Fuerzas Aéreas Reales Británicas intentaban ocultar el hecho de haber desarrollado un sofisticado sistema de radar aéreo para derribar a los bombarderos alemanes. Para evitar tocar este delicado tema, aseguraban que la gran agudeza visual de sus pilotos de combate por la noche se debía a la enorme cantidad de zanahorias que incluían en su dieta.',
+	},
+	{
+		titulo: 'Arroz, rey del mundo',
+		descripcion:
+			'El alimento más consumido en todo el mundo es el arroz en sus diferentes variedades ofertadas en los mercados alrededor del planeta. El arroz es la base de la gastronomía de muchos países, y tan solo en China se consumieron 123,790 toneladas de arroz en 2019.',
+	},
+
+	{
+		titulo: 'Comer despacio para ser más feliz',
+		descripcion:
+			'Además de evitar notar las digestiones, comer más lento te ayuda a liberarte del estrés y a no engullir la comida, ya que aprendes a parar cuando no tienes más hambre.',
+	},
+	{
+		titulo: 'Más vitamina C que las naranjas',
+		descripcion:
+			'Si quieres ayudar a prevenir resfriados, las naranjas no son tus únicas aliadas. De hecho, el perejil, el pimiento rojo, el brócoli o la papaya tienen más cantidad de vitamina C. ¡Inclúyelos en tu dieta!',
+	},
+
+	{
+		titulo: 'El poder antiedad de las frutas y verduras rojas',
+		descripcion:
+			'El color rojizo que reciben las frutas y verduras se debe al licopeno, un poderoso antioxidante, por lo que comer tomates, pimientos o sandía te ayudará a prevenir el envejecimiento celular.',
+	},
+
+	//Campos Fabian:
+	{
+		titulo: 'Las manzanas pertenecen a la familia de las rosas',
+		descripcion:
+			'Sorprendentemente, no solo las manzanas, sino muchas otras frutas, son parientes cercanos de las rosas: todas pertenecen a la familia de las rosáceas. Las peras, las ciruelas, las frambuesas y los damascos son otros ejemplos.',
+	},
+
+	{
+		titulo: 'El amor por el café está en tus genes',
+		descripcion:
+			'Científicos de Harvard descubrieron por qué el café afecta a las personas de una manera diferente. Los genes son los culpables, por lo que incluso un sorbo de esta bebida puede hacer que alguien se sienta fresco y nuevo, mientras que otra persona necesitaría 2 o 3 tazas para conseguir ese efecto.',
+	},
+	{
+		titulo: 'Una mazorca siempre tiene un número par de granos',
+		descripcion:
+			'Contiene un número par de filas, normalmente 16, y un promedio de 800 granos. El número de la fila es siempre par, porque las espiguillas del maíz se originan en pares, y cada espiguilla produce dos flósculos: uno fértil y otro estéril.',
+	},
+
+	{
+		titulo: 'Las zanahorias no siempre fueron de color naranja',
+		descripcion:
+			'Las zanahorias solían ser de color amarillo, y lentamente fueron cambiando hacia tornarse púrpura. En el siglo XVI, granjeros holandeses las hicieron naranja al cambiar su fórmula original hacia una más deliciosa.',
+	},
+	{
+		titulo: 'El sándwich fue inventado durante un juego de cartas',
+		descripcion:
+			'El conde de Sandwich, John Montagu, jugaba a las cartas todo el día y toda la noche. Tenía hambre, pero no quería poner sus cartas sobre la mesa, así que ordenó que pusieran carne entre dos rodajas de pan para poder comer el bocadillo con una sola mano.',
+	},
+
+	{
+		titulo: 'La pizza hawaiana fue inventada en Canadá',
+		descripcion:
+			'La idea de poner piña en la pizza se le ocurrió a un inmigrante griego llamado Sam Panopoulos en Chatham-Kent, Ontario, en 1962. La pizza fue nombrada “hawaiana” por la marca de fruta que se usó en ella.',
+	},
+	{
+		titulo: 'El algodón de azúcar fue inventado por un dentista',
+		descripcion:
+			'El dentista William Morrison inventó el postre Fairy Floss, el cual es conocido actualmente como algodón de azúcar. Un poco más tarde, otro dentista patentó una máquina para producir esta golosina como la conoces hoy.',
+	},
+
+	{
+		titulo: 'Sin moscas, no tendríamos chocolate',
+		descripcion:
+			'Un cierto tipo microscópico de moscas llamado midge (mosquito) poliniza la planta de cacao. Sin esta, la producción de chocolate no sería posible.',
+	},
+	{
+		titulo: 'Las langostas solían ser alimentos de la clase obrera',
+		descripcion:
+			'Se consideraba que las langostas eran insectos marinos, por lo que eran devueltas al mar o usadas para alimentar a los sirvientes. Incluso había una ley que prohibía servir demasiada langosta a los prisioneros, ya que se consideraba demasiado cruel hacerlo.',
+	},
+
+	{
+		titulo: 'El kétchup solía ser un medicamento',
+		descripcion:
+			'En la década de 1800, el Dr. John C. Bennett anunció que el kétchup era un remedio universal para la diarrea y la indigestión. Incluso se vendió como píldoras en los Estados Unidos.',
+	},
+
+	//Campos Yamilet:
+	{
+		titulo: 'Las almendras no son nueces',
+		descripcion:
+			'La mayoría de nosotros creemos que las almendras son nueces, pero técnicamente son frutas de cáscara dura que provienen del almendro. Eso las hace estar relacionadas con los melocotones, las cerezas, ciruelas y nectarinas.',
+	},
+
+	{
+		titulo: 'Las fresas no son bayas',
+		descripcion:
+			'Los plátanos, los kiwis, las berenjenas y hasta los pepinos son bayas, pero las fresas, las moras y las frambuesas no lo son. Provienen de una flor con más de un ovario, por lo que técnicamente son frutas agregadas.',
+	},
+	{
+		titulo: 'Las setas contienen quitina (al igual que los insectos)',
+		descripcion:
+			'odos los hongos contienen un biopolímero especial llamado quitina. Esta sustancia es la misma que endurece las alas de los insectos. Por eso no puedes sobrecocinar los champiñones, ya sea que los cocines durante 3 minutos o 3 horas: su sabor y su forma se mantendrán relativamente sin cambios.',
+	},
+
+	{
+		titulo: 'No puedes cultivar zanahorias bebé',
+		descripcion:
+			'Las zanahorias babé están hechas de zanahorias normales que se pelan y se cortan. Se inventaron a mediados de 1980, como una forma de hacer uso de las hortalizas deformadas que antes se tiraban a la basura.',
+	},
+	{
+		titulo:
+			'una cuarta parte de todas las avellanas del mundo se utilizan para hacer Nutella',
+		Descripcion:
+			'Los amantes de Nutella en todo el mundo consumen tanto de ella que algunas universidades ya están tratando de cultivar avellanas en laboratorios para satisfacer la demanda cada vez mayor de este producto.',
+	},
+
+	{
+		titulo: 'Los limones pueden flotar, pero las limas no',
+		descripcion:
+			'La densidad de los limones es ligeramente más baja que la del agua, por lo que pueden emerger a la superficie de un vaso si los tiras allí. Las limas se hundirán porque son más densas.',
+	},
+	{
+		titulo: 'El queso es el alimento más robado del mundo',
+		descripcion:
+			'De todo el queso producido en el mundo, alrededor del 4 % es robado. Las variedades de lujo hasta suelen ser vendidas en un mercado de queso negro.',
+	},
+
+	{
+		titulo: 'La miel no tiene fecha de caducidad',
+		descripcion:
+			'Debido a su acidez y a la ausencia de agua, la miel nunca se echa a perder.',
+	},
+	{
+		titulo: ' Hay mercurio en el atún enlatado',
+		descripcion:
+			'El mercurio presente en los mariscos es una consecuencia de la contaminación humana. La cantidad de este elemento en el atún enlatado es bastante alta, por lo que el salmón es una alternativa menos peligrosa.',
+	},
+
+	{
+		titulo: 'Té',
+		descripcion:
+			'Nunca se debe beber el té si no está recién hecho, pues irrita las paredes del estómago. Los japoneses tienen un dicho que dice: "Té de ayer, es peor que la mordedura de una serpiente", así que deberíamos hacerles caso.',
+	},
+];

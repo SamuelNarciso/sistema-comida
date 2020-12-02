@@ -40,116 +40,45 @@
 					</section>
 					<section class="derecha">
 						<p class="titulo_general precio">Lista de pedidos</p>
-						<div class="lista_comandas_platillos">
-							<div class="contenido_comanda_platillo">
-								<div class="titulo_comanda">
-									<p>titulo Lorem, ipsum dolor.</p>
-								</div>
-								<div class="ingredientes_comanda">
-									<p>Ingrediente 1</p>
-									<p>Ingrediente 2</p>
-									<p>Ingrediente 3</p>
-									<p>Ingrediente 4</p>
-								</div>
-								<p class="precio">$12345</p>
-							</div>
-							<div class="contenido_comanda_platillo">
-								<div class="titulo_comanda">
-									<p>titulo Lorem, ipsum dolor.</p>
-								</div>
-								<div class="ingredientes_comanda">
-									<p>Ingrediente 1</p>
-									<p>Ingrediente 2</p>
-									<p>Ingrediente 3</p>
-									<p>Ingrediente 4</p>
-								</div>
-								<p class="precio">$12345</p>
-							</div>
-							<div class="contenido_comanda_platillo">
-								<div class="titulo_comanda">
-									<p>titulo Lorem, ipsum dolor.</p>
-								</div>
-								<div class="ingredientes_comanda">
-									<p>Ingrediente 1</p>
-									<p>Ingrediente 2</p>
-									<p>Ingrediente 3</p>
-									<p>Ingrediente 4</p>
-								</div>
-								<p class="precio">$12345</p>
-							</div>
-							<div class="contenido_comanda_platillo">
-								<div class="titulo_comanda">
-									<p>titulo Lorem, ipsum dolor.</p>
-								</div>
-								<div class="ingredientes_comanda">
-									<p>Ingrediente 1</p>
-									<p>Ingrediente 2</p>
-									<p>Ingrediente 3</p>
-									<p>Ingrediente 4</p>
-								</div>
-								<p class="precio">$12345</p>
-							</div>
-							<div class="contenido_comanda_platillo">
-								<div class="titulo_comanda">
-									<p>titulo Lorem, ipsum dolor.</p>
-								</div>
-								<div class="ingredientes_comanda">
-									<p>Ingrediente 1</p>
-									<p>Ingrediente 2</p>
-									<p>Ingrediente 3</p>
-									<p>Ingrediente 4</p>
-								</div>
-								<p class="precio">$12345</p>
-							</div>
-							<div class="contenido_comanda_platillo">
-								<div class="titulo_comanda">
-									<p>titulo Lorem, ipsum dolor.</p>
-								</div>
-								<div class="ingredientes_comanda">
-									<p>Ingrediente 1</p>
-									<p>Ingrediente 2</p>
-									<p>Ingrediente 3</p>
-									<p>Ingrediente 4</p>
-								</div>
-								<p class="precio">$12345</p>
-							</div>
-						</div>
+						<div class="lista_comandas_platillos"></div>
 
 						<p class="precio precio_total">$1213231</p>
 					</section>
 				</section>
 				<section class="inferior">
 					<div class="datos_comida">
-						<div class="titulo_datos"><p>TITULO DEL DATO</p></div>
+						<div class="titulo_datos">
+							<p id="titulo_dato">TITULO DEL DATO</p>
+						</div>
 						<div class="dato">
-							<p>
-								Lorem ipsum dolor
-								<span class="resaltado">sit amet consectetur</span> adipisicing
-								elit. Tempore modi sapiente molestias ipsum quos, illum,
-								voluptate labore sequi
-								<span class="resaltado">harum dicta ea numquam.</span> Qui
-								exercitationem nihil vitae magnam
-								<span class="resaltado">necessitatibus explicabo quo</span>!
-								Lorem ipsum dolor sit
-								<span class="resaltado">amet consectetur adipisicing</span>
-								elit. Doloribus temporibus iure ducimus laboriosam vero
-								asperiores excepturi illo
-								<span class="resaltado"
-									>incidunt iste quibusdam sapiente, nam autem odit</span
-								>
-								ex minus, soluta reiciendis provident commodi.Dignissimos,
-								assumenda. Inventore illum deserunt
-								<span class="resaltado"> aliquam doloremque enim rerum </span>
-								eos minima dicta alias corrupti odio quos ullam porro fugiat
-								laboriosam minus quia ducimus
-								<span class="resaltado">
-									dignissimos recusandae perspiciatis dolor repellat </span
-								>, placeat asperiores?
+							<p id="descripcion_dato">
+								Lorem ipsum dolor ...
 							</p>
 						</div>
 					</div>
 				</section>
 			</main>
 		</div>
+
+		<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+		<!-- <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script> -->
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: 'AIzaSyCvEC-fABrhz8tHDFUzeprygOX5i4bbIpI',
+				authDomain: 'zandunguera-1c647.firebaseapp.com',
+				databaseURL: 'https://zandunguera-1c647.firebaseio.com',
+				projectId: 'zandunguera-1c647',
+				storageBucket: 'zandunguera-1c647.appspot.com',
+				messagingSenderId: '372900083592',
+				appId: '1:372900083592:web:fa77f16b74c39d3c516c3d',
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+		</script>
+
+		<script src="js/mandar_a_cocina.js" type="module"></script>
+		<script src="js/comanda_en_cocina.js" type="module"></script>
 	</body>
 </html>

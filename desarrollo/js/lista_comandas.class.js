@@ -26,7 +26,6 @@ export class lista_comandas {
 	}
 
 	eliminar_platillo_comanda(id_platillo) {
-		console.log(this.lista_comanda);
 		let lista_temp = [];
 		this.lista_comanda.forEach((platillo) => {
 			if (platillo.id_comanda_platillo != id_platillo) {

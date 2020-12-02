@@ -8,12 +8,9 @@ const busqueda_bd = (id) => {
 const colocar_ingredientes_principales = (lista_ingredientes) => {
 	let html_lista_ingredientes = ``;
 	lista_ingredientes.forEach((ingrediente) => {
-		html_lista_ingredientes += `
-        <div class="ingrediente_contenido">
+		html_lista_ingredientes += `<div class="ingrediente_contenido">
             <p class="texto_contenido">${ingrediente}</p>
-        </div>
-
-        `;
+        </div> `;
 	});
 
 	return html_lista_ingredientes;
@@ -24,8 +21,8 @@ const colocar_ingredientes_extra = (lista_ingredientes_extra) => {
 	lista_ingredientes_extra.forEach((ingrediente) => {
 		html_lista_ingredientes_extra += `
     <div class="label_input">
-    <label for="ingrediente_${ingrediente}">${ingrediente}</label>
-      <input type="checkbox" name="ingrediente_${ingrediente}" class="ingrediente_extra" id="ingrediente_${ingrediente}" />
+    <label for="${ingrediente}">${ingrediente}</label>
+      <input type="checkbox" name="${ingrediente}" class="ingrediente_extra" id="${ingrediente}" />
     </div>
 
         `;
@@ -70,15 +67,15 @@ export const llenado_mas_informacion = (id) => {
             <p class="texto_contenido">${datos_platillo.descripcion_platillo}</p>
         </div>`;
 
-	const html_estructura_mas_informacion = `
-    <div class="foto_comida">
+	// const html_estructura_mas_informacion = `
+    // <div class="foto_comida">
     
-    </div>
+    // </div>
 
-    <div class="informacion">
-        <input type="button" id="cerrar_mas_informacion" class="cerrar" value="X" />
+    // <div class="informacion">
+    //     <input type="button" id="cerrar_mas_informacion" class="cerrar" value="X" />
         
-    </div>`;
+    // </div>`;
 
 	foto_comida_estructura.innerHTML = html_foto_comida;
 	mas_informacion_estructura.innerHTML = html_informacion;

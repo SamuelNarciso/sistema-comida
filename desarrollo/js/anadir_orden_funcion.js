@@ -26,14 +26,11 @@ const insertar_platillos_comanda_visual = (html_platillos_comanda) => {
 	lista_comandas_visual.innerHTML = html_platillos_comanda;
 };
 
-const extraer_ingredientes = (comanda_platillo) => {
+export const extraer_ingredientes = (comanda_platillo) => {
 	let html_ingredientes_platillo = ``;
 	if (comanda_platillo.ingredientes.length > 0) {
 		comanda_platillo.ingredientes.forEach((ingrediente) => {
-			html_ingredientes_platillo += `<p class="item">${ingrediente.replace(
-				'ingrediente_',
-				''
-			)} </p>`;
+			html_ingredientes_platillo += `<p class="item">${ingrediente} </p>`;
 		});
 	} else {
 		html_ingredientes_platillo = `<p  class="item color_rojo"> No agrego ingredientes extra </p>`;
@@ -42,7 +39,6 @@ const extraer_ingredientes = (comanda_platillo) => {
 };
 
 const extraer_platillo_comanda = (lista_comanda) => {
-	// console.log(lista_comanda);
 	let html_platillos_comanda = ``;
 	lista_comanda.forEach((comanda_platillo) => {
 		html_platillos_comanda += `<div data-id-comanda-platillo="${
@@ -63,14 +59,17 @@ const extraer_platillo_comanda = (lista_comanda) => {
 };
 
 export const buscar_ingredientes_extra = (id, platillo) => {
-	const ingredintes_extra = platillo.querySelectorAll(
-		'.ingredientes_extra form .ingrediente_extra'
-	);
 	let ingredientes = [];
 
-	ingredintes_extra.forEach((ingrediente) => {
-		ingrediente.checked ? ingredientes.push(ingrediente.id) : null;
-	});
+	if (platillo) {
+		const ingredientes_extra = platillo.querySelectorAll(
+			'.ingredientes_extra form .ingrediente_extra'
+		);
+
+		ingredientes_extra.forEach((ingrediente) => {
+			ingrediente.checked ? ingredientes.push(ingrediente.id) : null;
+		});
+	}
 
 	const precio = platillos_bd[`${id}`].precio_platillo;
 	const nombre = platillos_bd[`${id}`].nombre_platillo;
