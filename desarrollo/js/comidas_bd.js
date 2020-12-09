@@ -179,7 +179,7 @@ export const platillos_bd = {
 		id_platillo: 'info_platillo_molotes_servidos',
 		ruta_imagen_platillo: 'Assets/img/Molotes.JPG',
 		alt_imagen: 'Molotes_servidos',
-		precio_platillo: '3 x 40',
+		precio_platillo: '40',
 		ingredientes_principales: ['Bistec con papa'],
 		ingredientes_extra: ['Quesillo'],
 		descripcion_platillo:
