@@ -44,12 +44,13 @@ export const llenado_mas_informacion = (id) => {
 
     const html_foto_comida = `<img src="${datos_platillo.ruta_imagen_platillo}" alt="${datos_platillo.alt_imagen}" />`;
     
-	const html_informacion = `<input type="button" id="cerrar_mas_informacion" class="cerrar" value="X" />
+	const html_informacion = `<input type="button" id="cerrar_mas_informacion" class="cerrar hover_verde" value="X" />
         <h1 class="titulo nombre_platillo">${datos_platillo.nombre_platillo}</h1>     
         <div class="precio_botonOrden">
             <p class="precio">$${datos_platillo.precio_platillo}</p>
-            <input data-id="${datos_platillo.id_platillo}" type="button" class="boton realizar-orden"value="Añadir a la orden " />
+            <input data-id="${datos_platillo.id_platillo}" type="button" class="boton realizar-orden "value="Añadir a la orden " />
         </div>
+<div class="contenedor_todos_ingredientes">
         <div class="ingredientes">
             <p class="titulo">Ingredientes</p>
             <div class="lista_ingredientes">
@@ -62,20 +63,12 @@ export const llenado_mas_informacion = (id) => {
                 ${colocar_ingredientes_extra(datos_platillo.ingredientes_extra)}
             </form>
         </div>
+</div>
+
         <div class="descripcion_comida">
             <p class="titulo">Descripcion de la comida</p>
             <p class="texto_contenido">${datos_platillo.descripcion_platillo}</p>
         </div>`;
-
-	// const html_estructura_mas_informacion = `
-    // <div class="foto_comida">
-    
-    // </div>
-
-    // <div class="informacion">
-    //     <input type="button" id="cerrar_mas_informacion" class="cerrar" value="X" />
-        
-    // </div>`;
 
 	foto_comida_estructura.innerHTML = html_foto_comida;
 	mas_informacion_estructura.innerHTML = html_informacion;

@@ -13,20 +13,20 @@
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/estilos_generales.css" />
 		<title>Zandunguera</title>
 	</head>
 	<body>
 		<span class="opacidad recorrer_ventana"></span>
 		<div
-			data-id="info_platillo_cecina_servida"
-			class="mas_informacion_platillo recorrer_ventana"
+		data-id="info_platillo_cecina_servida"
+		class="mas_informacion_platillo recorrer_ventana"
 		>
 			<div class="foto_comida" id="foto_comida_estructura"></div>
-			<div class="informacion" id="mas_informacion_estructura"></div>
+			<div class="contenedor_informacion_precio_botones" id="mas_informacion_estructura"></div>
 		</div>
 
-		<div class="content">
+		<div class="contenedor_padre">
 			<header>
 				<div class="bajar_comanda contenedor_comanda">
 
@@ -43,43 +43,45 @@
 					<p class="cantidad_platillos">0</p>
 				</section>
 			</header>
-			<main>
-				<section class="header">
+		
+		
+			<main class="main_contenedor_padre">
+				<section class="contenedor_titulo">
 					<h1>Menu</h1>
 				</section>
 
-				<section class="main">
+				<section class="contenedor_platillos">
 				
-					<article class="categoria platillos">
+				
 					
 
 						<!--Inicio-->
 						<div
 							data-id="info_platillo_bistec_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Bistec Servida</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/bistec_servida.JPG"
 									alt="bistec_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$70</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$70</p>
 								<input
 									data-id="info_platillo_bistec_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_bistec_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -87,30 +89,30 @@
 
 						<div
 							data-id="info_platillo_cecina_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Cecina Servida</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/cecina_servida.JPG"
 									alt="cecina_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$70</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$70</p>
 								<input
 									data-id="info_platillo_cecina_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_cecina_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -118,30 +120,30 @@
 
 						<div
 							data-id="info_platillo_enchiladas_verdes"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Enchiladas Verdes</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/enchiladas_verdes.JPG"
 									alt="enchiladas_verdes"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$40</p>
 								<input
 									data-id="info_platillo_enchiladas_verdes"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_enchiladas_verdes"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -149,30 +151,30 @@
 
 						<div
 							data-id="info_platillo_garnacha_oaxaquena"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Garnachas Oaxaqueñas</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/garnacha_oaxaquena.JPG"
 									alt="garnacha_oaxaquena"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$35</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$35</p>
 								<input
 									data-id="info_platillo_garnacha_oaxaquena"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_garnacha_oaxaquena"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -180,30 +182,30 @@
 
 						<div
 							data-id="info_platillo_molote_cecina"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Molote de Cecina</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/molote.JPG"
 									alt="molote_cecina"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$40</p>
 								<input
 									data-id="info_platillo_molote_cecina"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_molote_cecina"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -211,30 +213,30 @@
 
 						<div
 							data-id="info_platillo_molote_chicharron_prensado"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Molote Chicharron Prensado</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/molote.JPG"
 									alt="molote_chicharron_prensado"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$40</p>
 								<input
 									data-id="info_platillo_molote_chicharron_prensado"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_molote_chicharron_prensado"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -242,30 +244,30 @@
 
 						<div
 							data-id="info_platillo_molote_longaniza"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Molote Longaniza</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/molote.JPG"
 									alt="molote_longaniza"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$40</p>
 								<input
 									data-id="info_platillo_molote_longaniza"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_molote_longaniza"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -273,30 +275,30 @@
 
 						<div
 							data-id="info_platillo_molote_picadillo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Molote Picadillo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/molote.JPG"
 									alt="molote_picadillo"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$40</p>
 								<input
 									data-id="info_platillo_molote_picadillo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_molote_picadillo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -304,30 +306,30 @@
 
 						<div
 							data-id="info_platillo_molote_pollo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Molote Pollo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/molote.JPG"
 									alt="molote_pollo"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$40</p>
 								<input
 									data-id="info_platillo_molote_pollo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_molote_pollo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -335,30 +337,30 @@
 
 						<div
 							data-id="info_platillo_molote_quesillo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Molote Quesillo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/molote.JPG"
 									alt="molote_quesillo"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$40</p>
 								<input
 									data-id="info_platillo_molote_quesillo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_molote_quesillo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -366,30 +368,30 @@
 
 						<div
 							data-id="info_platillo_tlayuda_oaxaquena"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Tlayuda Oaxaqueña</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/tlayuda_oaxaquena.jpg"
 									alt="tlayuda_oaxaquena"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$70</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$70</p>
 								<input
 									data-id="info_platillo_tlayuda_oaxaquena"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_tlayuda_oaxaquena"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -397,30 +399,30 @@
 
 						<div
 							data-id="info_platillo_molotes_servidos"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Molotes</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Molotes.JPG"
 									alt="Molotes_servidos"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">3 x $40</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">3 x $40</p>
 								<input
 									data-id="info_platillo_molotes_servidos"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_molotes_servidos"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -428,30 +430,30 @@
 
 						<div
 							data-id="info_platillo_mole_pollo_servido"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Mole con pollo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/MolePollo.JPG"
 									alt="Mole_Pollo_Servido"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$45</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$45</p>
 								<input
 									data-id="info_platillo_mole_pollo_servido"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_mole_pollo_servido"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -459,30 +461,30 @@
 
 						<div
 							data-id="info_platillo_enchilada_mole_servido"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Enchiladas de mole</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/EnchiladaMole.JPG"
 									alt="Enchilada_mole_servido"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$45</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$45</p>
 								<input
 									data-id="info_platillo_enchilada_mole_servido"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_enchilada_mole_servido"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -490,30 +492,30 @@
 
 						<div
 							data-id="info_platillo_picada_pollo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Picada de pollo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/picapollo.jpg"
 									alt="Picada_Pollo"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_picada_pollo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_picada_pollo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -521,30 +523,30 @@
 
 						<div
 							data-id="info_platillo_picada_chicha_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Picada de Chicharron prensado</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/PicaChicha.JPG"
 									alt="Picada_Chicha_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_picada_chicha_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_picada_chicha_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -552,30 +554,30 @@
 
 						<div
 							data-id="info_platillo_picada_cecina_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Picada de Cecina</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/PicaCeci.jpg"
 									alt="Picada_Cecina_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_picada_cecina_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_picada_cecina_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -583,30 +585,30 @@
 
 						<div
 							data-id="info_platillo_picada_quesillo_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Picada de quesillo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/PicaQuesillo.jpg"
 									alt="Picada_Quesillo_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_picada_quesillo_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_picada_quesillo_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -614,30 +616,30 @@
 
 						<div
 							data-id="info_platillo_picada_longaniza"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Picada de Longaniza</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/PicaLonga.jpg"
 									alt="Picada_longaniza"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_picada_longaniza"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_picada_longaniza"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -645,30 +647,30 @@
 
 						<div
 							data-id="info_platillo_picadapicadillo_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Picada de Picadillo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/PIcaPica.JPG"
 									alt="PicadaPicadillo_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_picadapicadillo_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_picadapicadillo_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -676,30 +678,30 @@
 
 						<div
 							data-id="info_platillo_dobladapollo_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Doblada de pollo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/dobladaPollo.jpg"
 									alt="DobladaPollo_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_dobladapollo_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_dobladapollo_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -707,30 +709,30 @@
 
 						<div
 							data-id="info_platillo_dobladachicha_servida"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Doblada de chicharrón prensado</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/dobladaChica.jpg"
 									alt="DobladaChicha_servida"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_dobladachicha_servida"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_dobladachicha_servida"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -738,30 +740,30 @@
 
 						<div
 							data-id="info_platillo_doblada_cecina"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Doblada cecina</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Doblada_cecina.JPG"
 									alt="Doblada_cecina"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_doblada_cecina"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_doblada_cecina"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -769,30 +771,32 @@
 
 						<div
 							data-id="info_platillo_doblada_quesillo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Doblada quesillo</p>
 							</div>
-							<div class="main_platillo">
+						
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
-									src="Assets/img/Quesadilla_quesillo.JPG"
-									alt="Doblada_quesillo"
+									src="Assets/img/Doblada_cecina.JPG"
+									alt="Doblada_cecina"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_doblada_quesillo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_doblada_quesillo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -800,30 +804,30 @@
 
 						<div
 							data-id="info_platillo_doblada_longaniza"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Doblada longaniza</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Quesadilla_longaniza.JPG"
 									alt="Doblada_longaniza"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_doblada_longaniza"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_doblada_longaniza"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -831,30 +835,30 @@
 
 						<div
 							data-id="info_platillo_doblada_picadillo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Doblada picadillo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Quesadilla_picadillo.JPG"
 									alt="Doblada_picadillo"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_doblada_picadillo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_doblada_picadillo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -862,30 +866,30 @@
 
 						<div
 							data-id="info_platillo_chilaquiles"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Chilaquiles</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Chilaquiles.JPG"
 									alt="Chilaquiles"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$45</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$45</p>
 								<input
 									data-id="info_platillo_chilaquiles"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_chilaquiles"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -893,30 +897,30 @@
 
 						<div
 							data-id="info_platillo_albondigas"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Albondigas</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Albondigas.jpg"
 									alt="Albondigas"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$45</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$45</p>
 								<input
 									data-id="info_platillo_albondigas"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_albondigas"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -924,30 +928,30 @@
 
 						<div
 							data-id="info_platillo_pechuga_asada"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Pechuga asada</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Pechuga_asada.jpg"
 									alt="Pechuga_asada"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$45</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$45</p>
 								<input
 									data-id="info_platillo_pechuga_asada"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_pechuga_asada"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -955,78 +959,78 @@
 
 						<div
 							data-id="info_platillo_chocolate_mayordomo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Chocolate mayordomo</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/Chocolate_mayordomo.jpg"
 									alt="Chocolate_mayordomo"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$25</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$25</p>
 								<input
 									data-id="info_platillo_chocolate_mayordomo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_chocolate_mayordomo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
 						</div>
 
-						<div data-id="info_platillo_cafe" class="platillo_vista_previa">
-							<div class="header_platillo">
+						<div data-id="info_platillo_cafe" class="tarjeta_platillo_vista_previa">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Café</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img loading="lazy" src="Assets/img/Cafe.jpg" alt="Cafe" />
 							</div>
-							<div class="informacion">
-								<p class="precio">$12</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$12</p>
 								<input
 									data-id="info_platillo_cafe"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_cafe"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
 						</div>
 
-						<div data-id="info_platillo_agua" class="platillo_vista_previa">
-							<div class="header_platillo">
+						<div data-id="info_platillo_agua" class="tarjeta_platillo_vista_previa">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Agua de sabor (1L)</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img loading="lazy" src="Assets/img/agua.jpg" alt="Agua" />
 							</div>
-							<div class="informacion">
-								<p class="precio">$10</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$10</p>
 								<input
 									data-id="info_platillo_agua"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_agua"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1035,30 +1039,30 @@
 						<!-- agua medio -->
 						<div
 							data-id="info_platillo_aguajamaicamedio"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Agua de Jamaica de 1/2 litro</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jamaica_medio.jpg"
 									alt="agua de jamaica medio"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$10</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$10</p>
 								<input
 									data-id="info_platillo_aguajamaicamedio"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_aguajamaicamedio"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1066,30 +1070,30 @@
 						<!-- agua litro -->
 						<div
 							data-id="info_platillo_aguajamaicalitro"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Agua de Jamaica de un litro</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jamaica_litro.jpg"
 									alt="Agua jamaica litro"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$20</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$20</p>
 								<input
 									data-id="info_platillo_aguajamaicalitro"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_aguajamaicalitro"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1097,30 +1101,30 @@
 						<!-- coca vidrio -->
 						<div
 							data-id="info_platillo_coca_vidrio"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Coca Cola de Vidrio</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/coca_vidrio.jpg"
 									alt="coca_vidrio"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_coca_vidrio"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_coca_vidrio"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1128,30 +1132,30 @@
 						<!-- Jarritos -->
 						<div
 							data-id="info_platillo_jarrito_uva"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Jarrito de Uva</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jarrito_uva.jpg"
 									alt="Jarrito uva"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_jarrito_uva"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_jarrito_uva"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1159,60 +1163,60 @@
 
 						<div
 							data-id="info_platillo_jarrito_mandarina"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Jarrito de mandarina</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jarrito_mandarina.jpg"
 									alt="Jarrito mandarina"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_jarrito_mandarina"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_jarrito_mandarina"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
 						</div>
 						<div
 							data-id="info_platillo_jarrito_rojo"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Jarrito de TutiFruti</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jarrito_rojo.jpg"
 									alt="Jarrito rojo"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_jarrito_rojo"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_jarrito_rojo"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1220,30 +1224,30 @@
 
 						<div
 							data-id="info_platillo_jarrito_limon"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Jarrito de Limon</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jarrito_limon.jpg"
 									alt="Jarrito Limon"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_jarrito_limon"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_jarrito_limon"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1251,30 +1255,30 @@
 
 						<div
 							data-id="info_platillo_jarrito_piña"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Jarrito de Piña</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jarrito_piña.jpg"
 									alt="Jarrito Piña"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_jarrito_piña"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_jarrito_piña"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1282,30 +1286,30 @@
 
 						<div
 							data-id="info_platillo_jarrito_manzana"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Jarrito de Manzana</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/jarrito_manzana.jpg"
 									alt="Jarrito Manzana"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_jarrito_manzana"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_jarrito_manzana"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1313,30 +1317,30 @@
 						<!-- Boing -->
 						<div
 							data-id="info_platillo_boing_uva"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Boing de Uva</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/boing_uva.jpg"
 									alt="Boing uva"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_boing_uva"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_boing_uva"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1344,30 +1348,30 @@
 
 						<div
 							data-id="info_platillo_boing_mango"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Boing de Mango</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/boing_mango.jpg"
 									alt="Boing Mango"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_boing_mango"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_boing_mango"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1375,30 +1379,30 @@
 
 						<div
 							data-id="info_platillo_boing_guayaba"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Boing de Guayaba</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/boing_guayaba.jpg"
 									alt="Boing Guayaba"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_boing_guayaba"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_boing_guayaba"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
@@ -1406,41 +1410,41 @@
 
 						<div
 							data-id="info_platillo_boing_manzana"
-							class="platillo_vista_previa"
+							class="tarjeta_platillo_vista_previa"
 						>
-							<div class="header_platillo">
+							<div class="contenedor_titulo_platillo">
 								<p class="titulo_platillo">Boing de Manzana</p>
 							</div>
-							<div class="main_platillo">
+							<div class="contenedor_foto_platillo">
 								<img
 									loading="lazy"
 									src="Assets/img/boing_manzana.jpg"
 									alt="Boing Manzana"
 								/>
 							</div>
-							<div class="informacion">
-								<p class="precio">$15</p>
+							<div class="contenedor_precio_botones">
+								<p class="precio alto_33">$15</p>
 								<input
 									data-id="info_platillo_boing_manzana"
 									type="button"
-									class="boton_platillo boton_secundario"
+									class="boton_platillo alto_33 boton_secundario hover_verde"
 									value="Ver ingredientes"
 								/>
 								<input
 									data-id="info_platillo_boing_manzana"
 									type="button"
-									class="boton_platillo boton_primario"
+									class="boton_platillo alto_33 boton_primario"
 									value="Añadir a la orden"
 								/>
 							</div>
 						</div>
-					</article>
+				
 
 
 					<!-- TODO: FIN ARTICLE -->
 				</section>
 			</main>
-			<footer></footer>
+		
 
 
 			<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>

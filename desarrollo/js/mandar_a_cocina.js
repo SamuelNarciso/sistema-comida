@@ -1,9 +1,6 @@
 import { lista_comanda, extraer_ingredientes } from './anadir_orden_funcion.js';
 import { platillos_bd } from './comidas_bd.js';
-import {
-	agregar_a_cocina,
-	consultar_datos_comanda,
-} from './firebase/metodos_firebase.js';
+import { agregar_a_cocina } from './firebase/metodos_firebase.js';
 
 const calcular_total = (lista) => {
 	let total = 0;
@@ -60,22 +57,23 @@ export const colocar_platillos = (comanda_data) => {
 	});
 
 	console.log(comanda_data);
-	document.querySelector('.precio_total').textContent = '$ ' +comanda_data.total;
+	document.querySelector('.precio_total').textContent =
+		'$ ' + comanda_data.total;
 	referencia_lista_comandas_platillos.innerHTML = platillosHTML;
 };
 
 export const registrar_platillos = () => {
 	const lista_platillos_comanda = lista_comanda.lista_comanda;
-	const hoy = new Date();
-	let fecha =
-		hoy.getDate() + '-' + (hoy.getMonth() + 1) + '-' + hoy.getFullYear();
+	const fecha = new Date().getTime();
 
 	agregar_a_cocina(
 		obtener_platillos_ingredientes(lista_platillos_comanda),
 		1,
 		calcular_total(lista_platillos_comanda),
-		fecha
-	);
+		fecha,
+		false
+		);
+
 };
 
 // console.log(id_comanda);

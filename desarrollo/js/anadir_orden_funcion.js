@@ -60,7 +60,7 @@ const extraer_platillo_comanda = (lista_comanda) => {
 
 export const buscar_ingredientes_extra = (id, platillo) => {
 	let ingredientes = [];
-
+	
 	if (platillo) {
 		const ingredientes_extra = platillo.querySelectorAll(
 			'.ingredientes_extra form .ingrediente_extra'
