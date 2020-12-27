@@ -72,11 +72,5 @@ export const registrar_platillos = () => {
 		calcular_total(lista_platillos_comanda),
 		fecha,
 		false
-		);
-
+	);
 };
-
-// console.log(id_comanda);
-// const comanda_data = consultar_datos_comanda(id_comanda);
-// consultar_datos_comanda(id_comanda);
-// ;
