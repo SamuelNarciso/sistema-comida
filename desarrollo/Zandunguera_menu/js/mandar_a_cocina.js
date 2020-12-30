@@ -62,13 +62,13 @@ export const colocar_platillos = (comanda_data) => {
 	referencia_lista_comandas_platillos.innerHTML = platillosHTML;
 };
 
-export const registrar_platillos = () => {
+export const registrar_platillos = (numero_mesa) => {
 	const lista_platillos_comanda = lista_comanda.lista_comanda;
 	const fecha = new Date().getTime();
 
 	agregar_a_cocina(
 		obtener_platillos_ingredientes(lista_platillos_comanda),
-		1,
+		numero_mesa,
 		calcular_total(lista_platillos_comanda),
 		fecha,
 		false

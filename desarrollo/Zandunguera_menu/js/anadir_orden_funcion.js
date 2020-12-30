@@ -8,14 +8,16 @@ export const crear_comanda = (
 	ingredientes_extra,
 	cantidad,
 	precio,
-	nombre
+	nombre,
+	numero_mesa
 ) => {
 	const platillo_ordenado = new comanda(
 		id,
 		ingredientes_extra,
 		cantidad,
 		precio,
-		nombre
+		nombre,
+		numero_mesa
 	);
 	lista_comanda.agregar_lista(platillo_ordenado);
 	extraer_platillo_comanda(lista_comanda.lista_comanda);
@@ -58,7 +60,7 @@ const extraer_platillo_comanda = (lista_comanda) => {
 	insertar_platillos_comanda_visual(html_platillos_comanda);
 };
 
-export const buscar_ingredientes_extra = (id, platillo) => {
+export const buscar_ingredientes_extra = (id, platillo,numero_mesa) => {
 	let ingredientes = [];
 	
 	if (platillo) {
@@ -73,7 +75,7 @@ export const buscar_ingredientes_extra = (id, platillo) => {
 
 	const precio = platillos_bd[`${id}`].precio_platillo;
 	const nombre = platillos_bd[`${id}`].nombre_platillo;
-	crear_comanda(id, ingredientes, 1, precio, nombre);
+	crear_comanda(id, ingredientes,1, precio, nombre,numero_mesa);
 };
 
 export const eliminar_orden = (id) => {

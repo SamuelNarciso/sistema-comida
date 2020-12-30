@@ -6,19 +6,23 @@ const botones_primarios = document.querySelectorAll('.boton_primario');
 const botones_secundarios = document.querySelectorAll('.boton_secundario');
 const comanda_icono = document.querySelector('.comanda_icono');
 const lista_comandas = document.querySelector('.lista_comandas');
-const mas_informacion_platillo = document.querySelector(
-	'.mas_informacion_platillo'
-);
+
+const mas_informacion_platillo = document.querySelector('.mas_informacion_platillo');
 const mandar_a_cocina = document.querySelector('.mandar_a_cocina');
+
+let numero_mesa = window.location.search.replace('?numero_mesa=','');
+console.log(numero_mesa)
 
 const ver_ingredientes_platillo = () => {
 	document.querySelector('.opacidad').classList.toggle('recorrer_ventana');
 	mas_informacion_platillo.classList.toggle('recorrer_ventana');
 };
 
+
+
 botones_primarios.forEach((boton) => {
 	boton.addEventListener('click', (e) => {
-		buscar_ingredientes_extra(e.target.dataset.id, null);
+		buscar_ingredientes_extra(e.target.dataset.id, null,numero_mesa);
 	});
 });
 
@@ -35,7 +39,7 @@ mas_informacion_platillo.addEventListener('click', (e) => {
 	}
 
 	if (e.target.classList.contains('realizar-orden')) {
-		buscar_ingredientes_extra(e.target.dataset.id, mas_informacion_platillo);
+		buscar_ingredientes_extra(e.target.dataset.id, mas_informacion_platillo,numero_mesa);
 	}
 });
 
@@ -47,7 +51,6 @@ comanda_icono.addEventListener('click', () => {
 
 lista_comandas.addEventListener('click', (e) => {
 	if (e.target.classList.contains('cerrar_comanda')) {
-		// console.log(e.target.dataset.idComandaPlatillo);
 		eliminar_orden(e.target.dataset.idComandaPlatillo);
 	}
 });
@@ -55,5 +58,5 @@ lista_comandas.addEventListener('click', (e) => {
 mandar_a_cocina.addEventListener('click', (e) => {
 	// colocar_platillos();
 	// console.log('Enviar')
-	registrar_platillos();
+	registrar_platillos(numero_mesa);
 });

@@ -4,27 +4,25 @@ const formulario_acceso = document.querySelector('#formulario_acceso');
 const redirectTo = (datos_rol) => {
 	switch (datos_rol.rol) {
 		case 'mesa':
-			// window.location.href = `comanda_en_cocina.html?id=${docRef.id}`;
-
-
 			console.log('rol: ' + datos_rol.rol);
 			console.log('numero_mesa: ' + datos_rol.numero_mesa);
-				window.location.href = `../desarrollo/Zandunguera_menu`
-				break;
-				case 'cocinero':
-					console.log('rol: ' + datos_rol.rol);
-					window.location.href = `../desarrollo/Zandunguera_cocinero`
+			window.location.href = `../desarrollo/Zandunguera_menu/index.html?numero_mesa=${datos_rol.numero_mesa}`;
+			break;
+		case 'cocinero':
+			console.log('rol: ' + datos_rol.rol);
+			window.location.href = `../desarrollo/Zandunguera_cocinero/index.html`;
 			break;
 	}
 };
 
- const  get_user_rol = async (user) => {
-	await db.collection('usuarios')
+const get_user_rol = async (user) => {
+	await db
+		.collection('usuarios')
 		.doc(user.uid)
 		.get()
 		.then(function (doc) {
 			if (doc.exists) {
-			redirectTo(doc.data().datos_rol);
+				redirectTo(doc.data().datos_rol);
 			} else {
 				console.log('No se encontro el documento.');
 			}
