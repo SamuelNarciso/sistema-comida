@@ -6,12 +6,11 @@ const botones_primarios = document.querySelectorAll('.boton_primario');
 const botones_secundarios = document.querySelectorAll('.boton_secundario');
 const comanda_icono = document.querySelector('.comanda_icono');
 const lista_comandas = document.querySelector('.lista_comandas');
-
 const mas_informacion_platillo = document.querySelector('.mas_informacion_platillo');
 const mandar_a_cocina = document.querySelector('.mandar_a_cocina');
 
 let numero_mesa = window.location.search.replace('?numero_mesa=','');
-console.log(numero_mesa)
+
 
 const ver_ingredientes_platillo = () => {
 	document.querySelector('.opacidad').classList.toggle('recorrer_ventana');
