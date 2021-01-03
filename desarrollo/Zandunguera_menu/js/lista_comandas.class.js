@@ -13,17 +13,11 @@ export class lista_comandas {
 	calcular_precio_total() {
 		const comanda_icono = document.querySelector('.comanda_icono');
 		let precio_total = 0;
-		this.lista_comanda.forEach((platillo) => {
-			precio_total += platillo.precio * 1;
-		});
+		this.lista_comanda.forEach((platillo) => { precio_total += platillo.precio * 1;	});
 
-		this.lista_comanda.length ? comanda_icono.classList.remove('comanda_sin_platillos') : console.log('no tiene');
-
-		if (this.lista_comanda.length > 0) {
-			
-		} else {
-			comanda_icono.classList.add('comanda_sin_platillos');
-		}
+		(this.lista_comanda.length)
+			? comanda_icono.classList.remove('comanda_sin_platillos')
+			: comanda_icono.classList.add('comanda_sin_platillos');
 
 		this.colocar_html_precio_total(precio_total);
 	}

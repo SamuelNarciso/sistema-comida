@@ -1,7 +1,4 @@
-import {
-	agregar_a_cocina,
-	consultar_datos_comanda,
-} from './firebase/metodos_firebase.js';
+import {consultar_datos_comanda} from './firebase/metodos_firebase.js';
 
 const id_comanda = window.location.search.slice(4);
 
