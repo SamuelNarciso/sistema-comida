@@ -12,7 +12,7 @@ header {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		.campo_texto {
+		#meses {
             text-align: center;
 			font-size: 18px;
 			width: 60%;
@@ -20,7 +20,8 @@ header {
 			border: 1px solid $color_verde;
 			border-radius: 05px;
             padding: 0 03px;
-            color: $color_cafe;
+			color: $color_cafe;
+			cursor: pointer;
 		}
 		.btn_principal {
 			font-size: 16px;

@@ -46,7 +46,7 @@ header form {
           align-items: center;
 }
 
-header form .campo_texto {
+header form #meses {
   text-align: center;
   font-size: 18px;
   width: 60%;
@@ -55,6 +55,7 @@ header form .campo_texto {
   border-radius: 05px;
   padding: 0 03px;
   color: #352f2f;
+  cursor: pointer;
 }
 
 header form .btn_principal {
@@ -265,6 +266,16 @@ main table tr td {
   color: #352f2f;
   font-weight: 600;
   background: #e2e2e2;
+}
+
+main table tr .total {
+  font-size: 1.25em;
+  color: #4285f4;
+  font-weight: 700;
+}
+
+main table tr .total .cantidad {
+  font-weight: 600;
 }
 
 main table tr:nth-child(even) td {

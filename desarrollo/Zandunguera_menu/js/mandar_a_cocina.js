@@ -55,7 +55,8 @@ export const colocar_platillos = (comanda_data) => {
 
 export const registrar_platillos = (numero_mesa) => {
 	const lista_platillos_comanda = lista_comanda.lista_comanda;
-	const fecha = new Date().getTime();
+	let fecha = new Date().getTime();
+	 fecha = fecha.getTime();
 
 	agregar_a_cocina(
 		obtener_platillos_ingredientes(lista_platillos_comanda),

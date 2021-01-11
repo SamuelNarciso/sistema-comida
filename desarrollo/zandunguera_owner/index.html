@@ -17,46 +17,78 @@
 	</head>
 	<body>
 		<div class="contenedor_general">
-			<header >
+			<header>
 				<form id="ventas_especificas">
-					<input type="date" class="campo_texto" placeholder="Fecha de venta" />
+					<select id="meses">
+						<option value="0">Selecciona un mes</option>
+						<option value="1">enero</option>
+						<option value="2">febrero</option>
+						<option value="3">marzo</option>
+						<option value="4">abril</option>
+						<option value="5">mayo</option>
+						<option value="6">junio</option>
+						<option value="7">julio</option>
+						<option value="8">agosto</option>
+						<option value="9">septiembre</option>
+						<option value="10">octubre</option>
+						<option value="11">noviembre</option>
+						<option value="12">diciembre</option>
+					</select>
 					<input type="submit" class="btn_principal" value="Consultar ventas" />
 				</form>
-				<a href="#" class="btn_secundario" id="btn_llamar_corteCaja"> corte de caja</a>
+				<a href="#" class="btn_secundario" id="btn_llamar_corteCaja">
+					corte de caja</a
+				>
 
 				<div class="corte_caja oculta">
 					<header><p>Corte de caja</p></header>
 					<form id="formulario_corte_caja">
 						<main>
-                            <div class="caja">
-                                
-    							<label for="date_inicio"> Fecha inicial </label>
-    							<input class="selector_fecha"  type="date" name="inicio" id="date_inicio" />
-                            </div>
-                            <div class="caja">
-                                
-                                <label for="date_fin"> Fecha final </label>
-                                <input  class="selector_fecha" type="date" name="fin" id="date_fin" />
-                            </div>
-                            
+							<div class="caja">
+								<label for="date_inicio"> Fecha inicial </label>
+								<input
+									class="selector_fecha"
+									type="date"
+									name="inicio"
+									id="date_inicio"
+								/>
+							</div>
+							<div class="caja">
+								<label for="date_fin"> Fecha final </label>
+								<input
+									class="selector_fecha"
+									type="date"
+									name="fin"
+									id="date_fin"
+								/>
+							</div>
 						</main>
 						<footer>
-							<input type="button" id="cancelar_fecha" value="Cancelar" class="btn_secundario" />
-							<input type="submit" id="buscar_fecha" value="Buscar" class="btn_primario" />
+							<input
+								type="button"
+								id="cancelar_fecha"
+								value="Cancelar"
+								class="btn_secundario"
+							/>
+							<input
+								type="submit"
+								id="buscar_fecha"
+								value="Buscar"
+								class="btn_primario"
+							/>
 						</footer>
 					</form>
 				</div>
 			</header>
 			<main>
-				<table>
-					<tr class="row">
+				<table class="lista_ventas">
+					<!--	<tr class="row">
 						<th colspan="1" scope="col" class="fuerte">Fecha</th>
 						<th colspan="1" scope="col" class="fuerte">Mesa</th>
 						<th colspan="1" scope="col" class="fuerte">Total</th>
 					</tr>
 
-				<div class="">
-                    <tr class="venta">
+                     <tr class="venta">
 						<td>15/12/2020</td>
 						<td>3</td>
 						<td>$<span class="cantidad">123</span></td>
@@ -80,8 +112,7 @@
 						<td>15/12/2020</td>
 						<td>3</td>
 						<td>$<span class="cantidad">123</span></td>
-					</tr>
-                </div>
+					</tr> -->
 				</table>
 			</main>
 			<footer>
@@ -89,9 +120,13 @@
 					<span class="inicio">1/12/2020</span> Hasta
 					<span class="fin">31/12/2020</span>
 				</p>
-				<p class="total">Total: $<span class="cantidad">123456</span></p>
+				<p class="total">Total: $<span class="cantidad_total_caja">0</span></p>
 			</footer>
-        </div>
-        <script src="js/app.js"></script>
+		</div>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+		<script src="../config/firebase.config.js"></script>
+		<script type="module" src="js/app.js"></script>
 	</body>
 </html>

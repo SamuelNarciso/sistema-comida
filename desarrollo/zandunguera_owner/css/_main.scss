@@ -24,6 +24,15 @@ main {
 				font-weight: 600;
 				background: $color_blanco_50;
 				// background: $color_blanco_50;
+
+			}
+			.total{
+				font-size: 1.25em;
+				color: $color_azul;
+				font-weight: 700;
+				.cantidad{
+					font-weight: 600;
+				}
 			}
 			&:nth-child(even){
 				td{
