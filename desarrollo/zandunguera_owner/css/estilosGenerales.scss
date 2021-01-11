@@ -1,0 +1,29 @@
+$color_cafe: #352f2f;
+$color_verde: #44af69;
+$color_rojo: #f8333c;
+$color_amarillo: #fcab10;
+$color_amarillo_50: #da941485;
+$color_blanco: #f1f1f1;
+$color_blanco_50: #e2e2e2;
+$color_negro: #212121;
+$color_azul: #4285f4;
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', 'Lucida Sans', 'Lucida Grande', sans-serif;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.contenedor_general {
+	width: 100%;
+	height: 100%;
+}
+@import 'header';
+@import 'main';
+@import 'footer';
