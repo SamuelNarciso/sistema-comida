@@ -17,38 +17,71 @@
 	</head>
 	<body>
 		<div class="contenedor_general">
-			<header>
-				<form>
-					<input type="text" class="campo_texto" placeholder="Fecha de venta" />
-					<input type="button" class="btn_principal" value="Consultar ventas" />
+			<header >
+				<form id="ventas_especificas">
+					<input type="date" class="campo_texto" placeholder="Fecha de venta" />
+					<input type="submit" class="btn_principal" value="Consultar ventas" />
 				</form>
-				<a href="#" class="btn_secundario"> corte de caja</a>
+				<a href="#" class="btn_secundario" id="btn_llamar_corteCaja"> corte de caja</a>
+
+				<div class="corte_caja oculta">
+					<header><p>Corte de caja</p></header>
+					<form id="formulario_corte_caja">
+						<main>
+                            <div class="caja">
+                                
+    							<label for="date_inicio"> Fecha inicial </label>
+    							<input class="selector_fecha"  type="date" name="inicio" id="date_inicio" />
+                            </div>
+                            <div class="caja">
+                                
+                                <label for="date_fin"> Fecha final </label>
+                                <input  class="selector_fecha" type="date" name="fin" id="date_fin" />
+                            </div>
+                            
+						</main>
+						<footer>
+							<input type="button" id="cancelar_fecha" value="Cancelar" class="btn_secundario" />
+							<input type="submit" id="buscar_fecha" value="Buscar" class="btn_primario" />
+						</footer>
+					</form>
+				</div>
 			</header>
 			<main>
 				<table>
 					<tr class="row">
-						<th colspan="1" scope="col" class="fuerte"> Fecha </th>
-						<th colspan="1" scope="col" class="fuerte"> Mesa </th>
-						<th colspan="1" scope="col" class="fuerte"> Total </th>
+						<th colspan="1" scope="col" class="fuerte">Fecha</th>
+						<th colspan="1" scope="col" class="fuerte">Mesa</th>
+						<th colspan="1" scope="col" class="fuerte">Total</th>
 					</tr>
 
-					<tr class="venta">
+				<div class="">
+                    <tr class="venta">
 						<td>15/12/2020</td>
-						<td> 3 </td>
-						<td>$<span class="cantidad">123</span> </td>
+						<td>3</td>
+						<td>$<span class="cantidad">123</span></td>
 					</tr>
 					<tr class="venta">
 						<td>15/12/2020</td>
-						<td> 3 </td>
-						<td>$<span class="cantidad">123</span> </td>
+						<td>3</td>
+						<td>$<span class="cantidad">123</span></td>
 					</tr>
 					<tr class="venta">
 						<td>15/12/2020</td>
-						<td> 3 </td>
-						<td>$<span class="cantidad">123</span> </td>
+						<td>3</td>
+						<td>$<span class="cantidad">123</span></td>
 					</tr>
-				
-				
+					<tr class="venta">
+						<td>15/12/2020</td>
+						<td>3</td>
+						<td>$<span class="cantidad">123</span></td>
+					</tr>
+					<tr class="venta">
+						<td>15/12/2020</td>
+						<td>3</td>
+						<td>$<span class="cantidad">123</span></td>
+					</tr>
+                </div>
 				</table>
 			</main>
 			<footer>
@@ -58,6 +91,7 @@
 				</p>
 				<p class="total">Total: $<span class="cantidad">123456</span></p>
 			</footer>
-		</div>
+        </div>
+        <script src="js/app.js"></script>
 	</body>
 </html>

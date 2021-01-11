@@ -7,51 +7,171 @@ header {
 	align-items: center;
 
 	form {
-        width: 55%;
-        height: 60%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+		width: 55%;
+		height: 60%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
 		.campo_texto {
-            font-size: 18px;
-            width: 60%;
-            height: 90%;
-            border: 1px solid $color_verde;
-            border-radius: 05px;
+            text-align: center;
+			font-size: 18px;
+			width: 60%;
+			height: 90%;
+			border: 1px solid $color_verde;
+			border-radius: 05px;
             padding: 0 03px;
-        }
+            color: $color_cafe;
+		}
 		.btn_principal {
-            font-size: 16px;
-            height: 90%;
-            width: 25%;
-            border-radius: 05px;
-            
-            border: 1px solid $color_verde;
-            font-weight: 500;
-            color: $color_blanco;
-            background: $color_amarillo;
-            transition: all ease .23s;
-            &:hover{
-                cursor: pointer;
-                transition: all ease .23s;
-                color: $color_negro;
-                border: 1px solid $color_blanco;
-                text-decoration: underline;
-            }
-            
-        }
-    }
-    .btn_secundario{
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 17px;
-        letter-spacing: 1px;
-        color: $color_blanco_50;
-        transition: all ease .25s;
-        &:hover{
-            transition: all ease .25s;
-            text-decoration: underline;
-            
-        }
-    }
+			font-size: 16px;
+			height: 90%;
+			width: 25%;
+			border-radius: 05px;
+
+			border: 1px solid $color_verde;
+			font-weight: 500;
+			color: $color_blanco;
+			background: $color_amarillo;
+			transition: all ease 0.23s;
+			&:hover {
+				cursor: pointer;
+				transition: all ease 0.23s;
+				color: $color_negro;
+				border: 1px solid $color_blanco;
+				text-decoration: underline;
+			}
+		}
+	}
+	.btn_secundario {
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 17px;
+		letter-spacing: 1px;
+		color: $color_blanco_50;
+		transition: all ease 0.25s;
+		&:hover {
+			transition: all ease 0.25s;
+			text-decoration: underline;
+		}
+	}
+
+	.corte_caja {
+		position: absolute;
+		width: 50%;
+		height: 33%;
+		top: 30%;
+
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+		border: 1px solid rgba(0, 0, 0, 0.329); // TODO: linea a borrar
+		border-radius: 5px;
+		header {
+			height: 25%;
+			width: 100%;
+			p {
+				font-size: 1.8em;
+				letter-spacing: 1px;
+				font-weight: 500;
+				color: $color_blanco;
+			}
+		}
+		form {
+			width: 100%;
+			height: 75%;
+			display: block;
+
+			main {
+				height: 70%;
+				width: 100%;
+				padding: 0%;
+				overflow: hidden;
+				background: $color_blanco;
+				.caja {
+					width: 100%;
+					height: 50%;
+					display: flex;
+					justify-content: space-around;
+                    align-items: center;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+                    label {
+						margin-right: 1em;
+						width: 35%;
+						font-weight: 500;
+						letter-spacing: 1px;
+						color: $color_cafe;
+					}
+					input {
+						font-weight: 600;
+						width: 50%;
+						height: 70%;
+						font-size: 1em;
+						text-align: center;
+						border: none;
+						box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+							rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+					}
+					#date_inicio {
+						color: $color_verde;
+					}
+					#date_fin {
+						color: $color_rojo;
+					}
+				}
+			}
+			footer {
+				height: 30%;
+				width: 100%;
+
+				input {
+					transition: ease all 0.25s;
+					cursor: pointer;
+					&:hover {
+						transition: ease all 0.25s;
+					}
+				}
+
+				.btn_secundario {
+					width: 30%;
+					height: 90%;
+					border: 2px solid $color_rojo;
+					color: $color_rojo;
+					font-weight: 600;
+					border-radius: 05px;
+					&:hover {
+						text-decoration: underline;
+						color: $color_blanco;
+						background: $color_rojo;
+					}
+				}
+				.btn_primario {
+					border-radius: 05px;
+					font-weight: 600;
+					height: 90%;
+					width: 30%;
+					background: $color_verde;
+					color: $color_blanco;
+					border: none;
+					font-size: 1.2em;
+					&:hover {
+						text-decoration: underline;
+						color: $color_verde;
+						background: $color_blanco;
+					}
+				}
+			}
+		}
+	}
 }
+
+	.oculta {
+		transition: all ease 0.55s;
+		transform: translate(200%, 0%);
+    }
+    .corte_caja{
+        transition: all ease 0.55s;
+
+    }
+
