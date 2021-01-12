@@ -23,9 +23,18 @@ form_ventas_especificas.addEventListener('submit', (e) => {
 	let [fecha, btn] = e.target;
 	fecha = fecha.value;
 	console.log(fecha);
-	let dia=(fecha==1||fecha==3||fecha==5||fecha==7||fecha==8||fecha==10||fecha==12)? 31
-	:(fecha == 2)? 28 : 30
-
+	let dia =
+		fecha == 1 ||
+		fecha == 3 ||
+		fecha == 5 ||
+		fecha == 7 ||
+		fecha == 8 ||
+		fecha == 10 ||
+		fecha == 12
+			? 31
+			: fecha == 2
+			? 28
+			: 30;
 
 	let fecha_min = new Date(2020, fecha, 1);
 
@@ -33,7 +42,7 @@ form_ventas_especificas.addEventListener('submit', (e) => {
 
 	console.log('fecha_min: ' + fecha_min);
 	console.log('fecha_max: ' + fecha_max);
-	
+
 	console.log('fecha_min: ' + fecha_min.getTime());
 	console.log('fecha_max: ' + fecha_max.getTime());
 });
